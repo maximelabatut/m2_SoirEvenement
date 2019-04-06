@@ -1,0 +1,65 @@
+###
+#####
+####### Micro-service evenement
+#####
+###
+
+### Recuperation de tous les evenement
+GET http://localhost:8080/evenement/
+
+### Création d'un evenement JSON
+POST http://localhost:8080/evenement/
+Content-Type: application/json
+
+{
+  "idCreateur": "1",
+  "nom": "Integration MIAGISTE",
+  "dateEvenement": "2099-10-10",
+  "lieu": "Orleans"
+}
+
+### Création d'un evenement XML
+POST http://localhost:8080/evenement/
+Content-Type: application/xml
+
+<Evenement>
+    <nom>Integration MIAGISTE</nom>
+    <dateEvenement>2099-10-10</dateEvenement>
+    <lieu>Orleans</lieu>
+</Evenement>
+
+
+### Recuperation d'un evenement
+GET http://localhost:8080/evenement/1
+
+
+### Création d'un evenement JSON
+PUT http://localhost:8080/evenement/1
+Content-Type: application/json
+
+{
+  "nom": "Integration des NOOBIES",
+  "dateEvenement": "2012-10-11",
+  "lieu": "batiment 3IA"
+}
+
+
+### Modification de l'utilisateur en XML
+PUT http://localhost:8080/evenement/1
+Content-Type: application/xml
+
+<Evenement>
+    <nom>Integration des NOOBIES</nom>
+    <dateEvenement>2012-10-11</dateEvenement>
+    <lieu>batiment 3IA</lieu>
+</Evenement>
+
+### Suppression de l'évenement (ARCHIVAGE)
+DELETE http://localhost:8080/evenement/1
+
+
+### Recuperation des participants de l'évenement
+GET http://localhost:8080/evenement/1/utilisateur
+
+### Recuperation d'un utilisateur participant à un évenement
+GET http://localhost:8080/evenement/1/utilisateur/4

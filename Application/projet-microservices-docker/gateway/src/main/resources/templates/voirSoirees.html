@@ -1,0 +1,219 @@
+<!DOCTYPE HTML>
+<html lang="fr" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="includes/head::head"></head>
+<header th:replace="includes/headerLogged::headerLogged"></header>
+    <body>
+
+        <!-- Modal Structure -->
+        <div id="modal1" class="modal">
+            <div class="modal-content">
+                <div class="row">
+                    <div class="input-field col s12">
+                        <h4 style="text-align: center">Création de votre Soirée</h4>
+                        <form th:action="@{/ui/voirSoiree}" method="post" th:object="${soiree}">
+                            <label for="nom">Entrez le nom de votre soirée :</label>
+                            <input id="nom" name="nom" type="text" class="validate" placeholder="Nom de votre soirée" maxlength="29"  required>
+
+                            <div class="col l12 m12 s12">
+                                <h5>Evenements Privés :</h5>
+                                <div th:if="${#lists.isEmpty(evenements)}">Il ne semble pas y avoir d'évènements privés</div>
+                                <div th:each="evenement:${evenements}">
+                                    <label>
+                                        <input type="checkbox" th:name="evenements" th:value="${evenement.id}"/>
+                                        <span th:text="${evenement.nom}"/>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="col l12 m12 s12">
+                                <h5>Evenements Publics :</h5>
+                                <!--<div th:if="${#lists.isEmpty(evenementsOpenAgenda)}">Il ne semble pas y avoir d'évènements publics</div>-->
+                                <div th:each="evenementOpenAgenda:${evenementsOpenAgenda}">
+                                    <label>
+                                        <input type="checkbox" th:name="evenementsOpenAgenda" th:value="${evenementOpenAgenda.uid}"/>
+                                        <span th:text="${evenementOpenAgenda.title}"/>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="col l12 m12 s12">
+                                <h5>Vos Amis :</h5>
+                                <div th:if="${#lists.isEmpty(amis)}">Vous n'avez pas encore d'amis</div>
+                                <div th:each="ami:${amis}">
+                                    <label>
+                                        <input type="checkbox" th:name="participants" th:value="${ami.id}"/>
+                                        <span th:text="${ami.prenom} +' '+ ${ami.nom}"/>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <h5>Le nombre de places maximum :</h5>
+                            <input id="nbPlaces" name="nbPlaces" type="number" class="validate" placeholder="Nombre de place"  required>
+
+                            <h5>Entrez la date de votre soirée :</h5>
+                            <input id="date" name="dateSoiree" type="text" class="validate datepicker" placeholder="Date de votre soirée" maxlength="29"  required>
+
+                            <div class="input-field col s12">
+                                <h5>Entrez l'heure de début de soirée :</h5>
+                                <select name="heureDebut">
+                                    <option value="" disabled selected>Choisissez une heure</option>
+                                    <option value="0H">00H</option>
+                                    <option value="1H">01H</option>
+                                    <option value="2H">02H</option>
+                                    <option value="3H">03H</option>
+                                    <option value="4H">04H</option>
+                                    <option value="5H">05H</option>
+                                    <option value="6H">06H</option>
+                                    <option value="7H">07H</option>
+                                    <option value="8H">08H</option>
+                                    <option value="9H">09H</option>
+                                    <option value="10H">10H</option>
+                                    <option value="11H">11H</option>
+                                    <option value="12H">12H</option>
+                                    <option value="13H">13H</option>
+                                    <option value="14H">14H</option>
+                                    <option value="15H">15H</option>
+                                    <option value="16H">16H</option>
+                                    <option value="17H">17H</option>
+                                    <option value="18H">18H</option>
+                                    <option value="19H">19H</option>
+                                    <option value="20H">20H</option>
+                                    <option value="21H">21H</option>
+                                    <option value="22H">22H</option>
+                                    <option value="23H">23H</option>
+                                </select>
+                            </div>
+
+                            <div class="col l12 m12 s12" style="text-align: center">
+                                <button class="btn waves-effect waves-light btn-modal-choix" type="submit" name="action" value="creation">Création</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container adjust-top">
+            <div class="path-nav">
+                <a th:href="@{/ui/menuPrincipal}">Accueil</a>
+                >
+                <a href="#">Soirées</a>
+            </div>
+            <div class="error" th:text="${error}"/>
+            <div class="row">
+                <div class="top-page">
+                    <h4 class="page-title">Soirées</h4>
+                    <a class="waves-effect waves-light btn green-theme modal-trigger page-title-button" href="#modal1"><i class="material-icons left">add_box</i>Créer une soirée</a>
+                </div>
+
+                <div class="col s12">
+                    <div class="card-panel">
+                        <h5 class="panel-information">Toutes les soirées</h5>
+
+                        <div class="overflow">
+
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Nom</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr th:if="${#lists.isEmpty(soirees)}"><td>Il n'y a pas encore de soirées</td></tr>
+                                    <tr th:each="soiree:${soirees}" class="small-height-cell">
+                                        <td><a th:href="@{/ui/voirSoiree/{id}(id=${soiree.id})}"  th:text="${soiree.nom}"/></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $('.modal').modal();
+                $('select').formSelect();
+            });
+        </script>
+
+        <script type="application/javascript">
+            $(document).ready(function() {
+                inter_fr = {
+                    cancel: 'Annuler',
+                    clear: 'RàZ',
+                    done:    'Valider',
+                    previousMonth:    '‹',
+                    nextMonth:    '›',
+                    months:    [
+                        'Janvier',
+                        'Février',
+                        'Mars',
+                        'Avril',
+                        'Mai',
+                        'Juin',
+                        'Juillet',
+                        'Août',
+                        'Septembre',
+                        'Octobre',
+                        'Novembre',
+                        'Décembre'
+                    ],
+                    monthsShort:    [
+                        'Jan',
+                        'Fév',
+                        'Mar',
+                        'Avr',
+                        'Mai',
+                        'Jun',
+                        'Jul',
+                        'Aou',
+                        'Sep',
+                        'Oct',
+                        'Nov',
+                        'Dec'
+                    ],
+
+                    weekdays:    [
+                        'Dimanche',
+                        'Lundi',
+                        'Mardi',
+                        'Mercredi',
+                        'Jeudi',
+                        'Vendredi',
+                        'Samedi'
+                    ],
+
+                    weekdaysShort:    [
+                        'Dimanche',
+                        'Lundi',
+                        'Mardi',
+                        'Mercredi',
+                        'Jeudi',
+                        'Vendredi',
+                        'Samedi'
+                    ],
+
+                    weekdaysAbbrev:    ['D', 'L', 'M', 'M', 'J', 'V', 'S']
+                };
+
+                $('.datepicker').datepicker({
+                    format: 'yyyy-mm-dd',
+                    selectYears: 120,
+                    i18n: inter_fr
+                });
+            });
+            /*
+            document.addEventListener('DOMContentLoaded', function() {
+                var elems = document.querySelectorAll('.datepicker');
+                var options = {
+                    format: 'dd/mm/yyyy'
+                };
+                var instances = M.Datepicker.init(elems, options);
+            });*/
+        </script>
+
+    </body>
+</html>

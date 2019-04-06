@@ -1,0 +1,135 @@
+version: '3'
+services:
+  eurekaserver:
+    container_name: eurekaserver
+    build: eurekaServer
+    ports:
+      - "8761:8761"
+
+  gateway:
+    container_name: gateway
+    build: gateway
+    ports:
+      - "8080:8080"
+    environment:
+      - REGISTRY_HOST=eurekaserver
+    depends_on:
+      - eurekaserver
+
+  utilisateur:
+    container_name: utilisateur
+    build: utilisateur
+    ports:
+      - "8082:8082"
+    depends_on:
+      - utilisateur_db
+      - eurekaserver
+
+  utilisateur_db:
+    container_name: utilisateur_db
+    image: mysql:5.7
+    volumes:
+      - utilisateur_db_data:/var/lib/mysql
+    environment:
+      - MYSQL_DATABASE=mysql_utilisateur
+      - MYSQL_ROOT_PASSWORD=root
+    ports:
+      - "3306"
+    restart: always
+
+  authentification:
+    container_name: authentification
+    build: authentification
+    ports:
+      - "8081:8081"
+    depends_on:
+      - authentification_db
+      - eurekaserver
+    restart: always
+
+
+  authentification_db:
+    container_name: authentification_db
+    image: mysql:5.7
+    volumes:
+      - authentification_db_data:/var/lib/mysql
+    environment:
+      - MYSQL_DATABASE=mysql_authentification
+      - MYSQL_ROOT_PASSWORD=root
+    ports:
+      - "3306"
+    restart: always
+
+  evenement:
+    container_name: evenement
+    build: evenement
+    ports:
+      - "8083:8083"
+    depends_on:
+      - evenement_db
+      - eurekaserver
+    restart: always
+
+  evenement_db:
+    container_name: evenement_db
+    image: mysql:5.7
+    volumes:
+      - evenement_db_data:/var/lib/mysql
+    environment:
+      - MYSQL_DATABASE=mysql_evenement
+      - MYSQL_ROOT_PASSWORD=root
+    ports:
+      - "3306"
+    restart: always
+
+  evenementopenagenda:
+    container_name: evenementopenagenda
+    build: evenementOpenAgenda
+    ports:
+      - "8085:8085"
+    depends_on:
+      - evenementopenagenda_db
+      - eurekaserver
+    restart: always
+
+  evenementopenagenda_db:
+    container_name: evenementopenagenda_db
+    image: mysql:5.7
+    volumes:
+      - evenementopenagenda_db_data:/var/lib/mysql
+    environment:
+      - MYSQL_DATABASE=mysql_evenementopenagenda
+      - MYSQL_ROOT_PASSWORD=root
+    ports:
+      - "3306"
+    restart: always
+
+  soiree:
+    container_name: soiree
+    build: soiree
+    ports:
+      - "8084:8084"
+    depends_on:
+      - soiree_db
+      - eurekaserver
+    restart: always
+
+  soiree_db:
+    container_name: soiree_db
+    image: mysql:5.7
+    volumes:
+      - soiree_db_data:/var/lib/mysql
+    environment:
+      - MYSQL_DATABASE=mysql_soiree
+      - MYSQL_ROOT_PASSWORD=root
+    ports:
+      - "3306"
+    restart: always
+
+volumes:
+  authentification_db_data: {}
+  utilisateur_db_data: {}
+  evenement_db_data: {}
+  evenementopenagenda_db_data: {}
+  soiree_db_data: {}
+

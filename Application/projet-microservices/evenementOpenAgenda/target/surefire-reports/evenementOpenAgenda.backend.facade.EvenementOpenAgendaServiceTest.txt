@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: evenementOpenAgenda.backend.facade.EvenementOpenAgendaServiceTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 23.916 s - in evenementOpenAgenda.backend.facade.EvenementOpenAgendaServiceTest

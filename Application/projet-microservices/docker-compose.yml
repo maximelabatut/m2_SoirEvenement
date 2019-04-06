@@ -1,0 +1,29 @@
+version: '3.3'
+services:
+  gateway_ms:
+    build: gateway
+    ports:
+      - "8080:8080"
+
+  utilisateur_ms:
+    build: utilisateur
+    ports:
+      - "8082:8082"
+    depends_on:
+      - mysql_utilisateur
+    restart: always
+
+  utilisateur_db:
+    image: mysql:5.7
+    volumes:
+      - db_data:/var/lib/mysql
+    environment:
+      - MYSQL_DATABASE=mysql_utilisateur
+      - MYSQL_ROOT_PASSWORD=root
+    ports:
+      - "3306:3306"
+    restart: always
+    command: mysqld --default_authentication_plugin=mysql_native_password
+
+volumes:
+  db_data: {}

@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html lang="fr" xmlns:th="http://www.thymeleaf.org">
+    <head th:replace="includes/head::head"></head>
+    <header th:replace="includes/header::header"></header>
+    <body>
+        <div class="container adjust-top">
+            <div class="row">
+                <div class="col s12 m12 l8 offset-l2">
+                    <div class="card-panel">
+                        <h4 class="header2">Connexion</h4>
+                        <div class="row form-log">
+
+                            <form th:action="@{/ui/connexion}" method="post" class="col s12">
+                                <div class="row form-theme">
+                                    <div class="error" th:text="${error}"/>
+                                    <div class="input-field col s12">
+                                        <input type="text" name="pseudo" id="pseudo" maxlength="50"/>
+                                        <label for="pseudo" >Quel est votre pseudo ?</label>
+                                    </div>
+                                    <div class="input-field col s12">
+                                        <input type="password" name="password" id="password"/>
+                                        <label for="password">Quel est votre mot de passe ?</label>
+                                    </div>
+                                    <div class="input-field col s12">
+                                        <input class="btn green-theme waves-effect waves-light right" type="submit" value="Connexion">
+                                    </div>
+                                </div>
+                            </form>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m12 l8 offset-l2">
+                    <div class="card-panel">
+                        <p class="panel-information">Vous n'avez pas de compte? <a th:href="@{/ui/inscription}" style="text-decoration: underline">inscrivez-vous ici</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

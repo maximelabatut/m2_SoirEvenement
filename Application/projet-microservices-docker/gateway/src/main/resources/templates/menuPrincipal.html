@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="fr" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="includes/head::head"></head>
+<header th:replace="includes/headerLogged::headerLogged"></header>
+    <body>
+
+        <div class="container adjust-top">
+            <div class="row">
+                <h4 class="page-title" th:text="'Bonjour ' + ${session.pseudoCourant}"></h4>
+                <!--<a th:href="@{/ui/deconnexion}" class="waves-effect waves-light btn red-theme page-title-button">Déconnexion</a>-->
+                <div class="col s12 m12 l12">
+                    <div class="card-panel">
+                        <h5 class="panel-information">Navigation</h5>
+                        <div class="element-container row">
+                            <div class="main-element col s6 m3">
+                                <a th:href="@{/ui/profil/{id}(id=${session.idCourant})}"><i class="large material-icons">account_circle</i><span class="element-description">Mon profil</span></a>
+                            </div>
+                            <div class="main-element col s6 m3">
+                                <a th:href="@{/ui/recherchePersonne}"><i class="large material-icons">search</i><span class="element-description">Rechercher une personne</span></a>
+                            </div>
+                            <div class="main-element col s6 m3">
+                                <a th:href="@{/ui/voirSoirees}"><i class="large material-icons">local_bar</i><span class="element-description">Voir les soirées</span></a>
+                            </div>
+                            <div class="main-element col s6 m3">
+                                <a th:href="@{/ui/voirEvenements}"><i class="large material-icons">nature_people</i><span class="element-description">Voir les évènements</span></a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <div class="col s12 m12 l6">
+                    <div class="card-panel">
+                        <h5 class="panel-information">Notifications Soirées</h5>
+                        <div class="overflow-200">
+                            <table>
+                                <thead>
+                                <tr>
+                                    <th>Soirée</th>
+                                    <th>Accepter</th>
+                                    <th>Refuser</th>
+                                </tr>
+                                </thead>
+
+                                <tbody>
+                                <tr th:if="${infosSoirees.isEmpty()}" class="small-height-cell"><td>Il n'y a pas de notification de soirée</td></tr>
+                                <tr th:each="informations:${infosSoirees}" class="small-height-cell">
+                                    <td th:text="${informations.getKey()}"></td>
+                                    <td><a th:href="@{/ui/accepterInvitationSoirees/{id}(id=${informations.getValue()})}">Accepter</a></td>
+                                    <td><a th:href="@{/ui/refuserInvitationSoirees/{id}(id=${informations.getValue()})}">Refuser</a></td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col s12 m12 l6">
+                    <div class="card-panel">
+                        <h5 class="panel-information">Notifications Amis</h5>
+                        <div class="overflow-200">
+                            <table>
+                                <thead>
+                                <tr>
+                                    <th>Amis</th>
+                                    <th>Accepter</th>
+                                    <th>Refuser</th>
+                                </tr>
+                                </thead>
+
+                                <tbody>
+                                <tr th:if="${infosAmis.isEmpty()}" class="small-height-cell"><td>Il n'y a pas de notification d'invitation d'amis</td></tr>
+                                <tr th:each="informations:${infosAmis}" class="small-height-cell">
+                                    <td th:text="${informations.getKey()}"></td>
+                                    <td><a th:href="@{/ui/accepterInvitationAmi/{id}(id=${informations.getValue()})}">Accepter</a></td>
+                                    <td><a th:href="@{/ui/refuserInvitationAmi/{id}(id=${informations.getValue()})}">Refuser</a></td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col s12 m12 l12">
+                    <div class="card-panel">
+                        <h5 class="panel-information">Soirées à venir</h5>
+                        <div class="overflow">
+                            <table class="centered">
+                                <thead>
+                                <tr>
+                                    <th>Soirée</th>
+                                    <th>Créateur</th>
+                                    <th>Date de début</th>
+                                    <th>Heure de début</th>
+                                    <th>Nombre de participants</th>
+                                    <th>Nombre d'événements</th>
+                                    <th>Voir la soirée</th>
+                                </tr>
+                                </thead>
+
+                                <tbody>
+                                <tr th:if="${soireesParticipe.isEmpty()}" class="small-height-cell"><td>Vous ne participez à aucune soirée(s) pour le moment</td></tr>
+                                <tr th:each="soiree:${soireesParticipe}" class="small-height-cell">
+                                    <td th:text="${soiree.nom}"></td>
+                                    <td th:text="${soiree.createur}"></td>
+                                    <td th:text="${soiree.dateSoiree}"></td>
+                                    <td th:text="${soiree.heureDebut}"></td>
+                                    <td th:text="${soiree.nbParticpants}"></td>
+                                    <td th:text="${soiree.nbEvenements}"></td>
+                                    <td><a th:href="@{/ui/voirSoiree/{id}(id=${soiree.id})}"><i class="small material-icons">open_in_new</i></a></td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,10 @@
+/Users/Quentin/Documents/Master_2/Semestre_2/Projet_API/Application/projet-microservices/authentification/src/main/java/authentification/backend/modele/exception/PseudoDejaPrisException.java
+/Users/Quentin/Documents/Master_2/Semestre_2/Projet_API/Application/projet-microservices/authentification/src/main/java/authentification/backend/modele/exception/UserIntrouvableException.java
+/Users/Quentin/Documents/Master_2/Semestre_2/Projet_API/Application/projet-microservices/authentification/src/main/java/authentification/backend/facade/AuthentificationServiceImpl.java
+/Users/Quentin/Documents/Master_2/Semestre_2/Projet_API/Application/projet-microservices/authentification/src/main/java/authentification/backend/facade/AuthentificationService.java
+/Users/Quentin/Documents/Master_2/Semestre_2/Projet_API/Application/projet-microservices/authentification/src/main/java/authentification/AuthentificationApplication.java
+/Users/Quentin/Documents/Master_2/Semestre_2/Projet_API/Application/projet-microservices/authentification/src/main/java/authentification/backend/repository/UserRepository.java
+/Users/Quentin/Documents/Master_2/Semestre_2/Projet_API/Application/projet-microservices/authentification/src/main/java/authentification/backend/modele/exception/IdentifiantsIncorrectsException.java
+/Users/Quentin/Documents/Master_2/Semestre_2/Projet_API/Application/projet-microservices/authentification/src/main/java/authentification/backend/domain/Login.java
+/Users/Quentin/Documents/Master_2/Semestre_2/Projet_API/Application/projet-microservices/authentification/src/main/java/authentification/backend/controllers/AuthentificationController.java
+/Users/Quentin/Documents/Master_2/Semestre_2/Projet_API/Application/projet-microservices/authentification/src/main/java/authentification/backend/modele/entities/User.java

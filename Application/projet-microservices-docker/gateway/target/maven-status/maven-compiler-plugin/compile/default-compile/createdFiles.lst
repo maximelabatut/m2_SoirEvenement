@@ -1,0 +1,10 @@
+gateway/frontend/domain/InvitationSoiree.class
+gateway/filters/pre/LoggingFilter.class
+gateway/frontend/domain/Evenement.class
+gateway/frontend/domain/Utilisateur.class
+gateway/frontend/domain/Soiree.class
+gateway/frontend/domain/InvitationAmi.class
+gateway/GatewayApplication.class
+gateway/frontend/domain/EvenementOpenAgenda.class
+gateway/frontend/MainController.class
+gateway/frontend/domain/SoireeVenir.class

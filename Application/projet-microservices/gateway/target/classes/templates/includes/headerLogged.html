@@ -1,0 +1,18 @@
+<!DOCTYPE HTML>
+<html lang="fr" xmlns:th="http://www.thymeleaf.org">
+<nav th:fragment="headerLogged">
+    <div class="nav-wrapper">
+        <a th:href="@{/ui/menuPrincipal}" class="brand-logo">API - DATA Orléans</a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+
+            <li><a th:href="@{/ui/menuPrincipal}">Menu Principal</a></li>
+            <li><a th:href="@{/ui/profil/{id}(id=${session.idCourant})}">Mon profil</a></li>
+            <li><a th:href="@{/ui/recherchePersonne}">Rechercher une personne</a></li>
+            <li><a th:href="@{/ui/voirSoirees}">Voir les soirées</a></li>
+            <li><a th:href="@{/ui/voirEvenements}">Voir les évènements</a></li>
+            <li><a th:href="@{/ui/deconnexion}" class="waves-effect waves-light btn red-theme page-title-button hide-on-small-only">Déconnexion</a></li>
+
+        </ul>
+    </div>
+</nav>
+</html>

@@ -1,0 +1,2483 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="e5d417d5-6ac5-4b80-aa2d-0c01535bb317" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/authentification/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/authentification/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/authentification/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/authentification/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/authentification/src/main/java/authentification/AuthentificationApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/authentification/src/main/java/authentification/AuthentificationApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/authentification/src/main/java/authentification/backend/controllers/AuthentificationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/authentification/src/main/java/authentification/backend/controllers/AuthentificationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/authentification/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/authentification/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/evenement/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/evenement/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/evenement/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/evenement/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/evenement/src/main/java/evenement/EvenementApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/evenement/src/main/java/evenement/EvenementApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/evenement/src/main/java/evenement/backend/filters/SecurityInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/evenement/src/main/java/evenement/backend/filters/SecurityInterceptor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/evenement/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/evenement/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/evenementOpenAgenda/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/evenementOpenAgenda/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/evenementOpenAgenda/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/evenementOpenAgenda/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/evenementOpenAgenda/src/main/java/evenementOpenAgenda/backend/EvenementOpenAgendaApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/evenementOpenAgenda/src/main/java/evenementOpenAgenda/backend/EvenementOpenAgendaApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/evenementOpenAgenda/src/main/java/evenementOpenAgenda/backend/filters/SecurityInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/evenementOpenAgenda/src/main/java/evenementOpenAgenda/backend/filters/SecurityInterceptor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/evenementOpenAgenda/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/evenementOpenAgenda/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/gateway/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/gateway/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway/src/main/java/gateway/GatewayApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/gateway/src/main/java/gateway/GatewayApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway/src/main/java/gateway/frontend/FragmentsController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway/src/main/java/gateway/frontend/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/gateway/src/main/java/gateway/frontend/MainController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway/src/main/resources/http_requests/authentification.http" beforeDir="false" afterPath="$PROJECT_DIR$/gateway/src/main/resources/http_requests/authentification.http" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway/src/main/resources/templates/voirSoirees.html" beforeDir="false" afterPath="$PROJECT_DIR$/gateway/src/main/resources/templates/voirSoirees.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/soiree/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/soiree/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/soiree/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/soiree/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/soiree/src/main/java/soiree/SoireeApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/soiree/src/main/java/soiree/SoireeApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/soiree/src/main/java/soiree/backend/filters/SecurityInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/soiree/src/main/java/soiree/backend/filters/SecurityInterceptor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/soiree/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/soiree/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utilisateur/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/utilisateur/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utilisateur/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/utilisateur/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utilisateur/src/main/java/utilisateur/UtilisateurApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/utilisateur/src/main/java/utilisateur/UtilisateurApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utilisateur/src/main/java/utilisateur/backend/filters/SecurityInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/utilisateur/src/main/java/utilisateur/backend/filters/SecurityInterceptor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utilisateur/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/utilisateur/src/main/resources/static/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../docs/data_injection.sh" beforeDir="false" afterPath="$PROJECT_DIR$/../../docs/data_injection.sh" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <ignored path="$PROJECT_DIR$/authentification/target/" />
+    <ignored path="$PROJECT_DIR$/motus/target/" />
+    <ignored path="$PROJECT_DIR$/dicos/target/" />
+    <ignored path="$PROJECT_DIR$/gateway/target/" />
+    <ignored path="$PROJECT_DIR$/.idea/httpRequests/" />
+    <ignored path="$PROJECT_DIR$/authent/target/" />
+    <ignored path="$PROJECT_DIR$/utilisateur/target/" />
+    <ignored path="$PROJECT_DIR$/evenement/target/" />
+    <ignored path="$PROJECT_DIR$/eureka/target/" />
+    <ignored path="$PROJECT_DIR$/openAgenda/target/" />
+    <ignored path="$PROJECT_DIR$/soiree/target/" />
+    <ignored path="$PROJECT_DIR$/evenementOpenAgenda/target/" />
+    <ignored path="$PROJECT_DIR$/serverEureka/target/" />
+    <ignored path="$PROJECT_DIR$/demo/target/" />
+    <ignored path="$PROJECT_DIR$/front/target/" />
+    <ignored path="$PROJECT_DIR$/eurekaServer/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/projet_microservices$soiree_in_soiree.ic" NAME="soiree in soiree Coverage Results" MODIFIED="1553632021864" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>soiree.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/projet_microservices$EvenementServiceTest.ic" NAME="EvenementServiceTest Coverage Results" MODIFIED="1553631854185" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>evenement.backend.facade.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/projet_microservices$All_in_utilisateur.ic" NAME="All in utilisateur Coverage Results" MODIFIED="1553634754869" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/projet_microservices$UtilisateurServiceTest.ic" NAME="UtilisateurServiceTest Coverage Results" MODIFIED="1553727337844" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>utilisateur.backend.facade.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/projet_microservices$UtilisateurServiceTest_ajouterAmiOK.ic" NAME="UtilisateurServiceTest.ajouterAmiOK Coverage Results" MODIFIED="1552943454032" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>utilisateur.backend.modele.facade.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/projet_microservices$AuthentificationServiceTest.ic" NAME="AuthentificationServiceTest Coverage Results" MODIFIED="1553631956266" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>authentification.backend.facade.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/projet_microservices$authentification_in_authentification.ic" NAME="authentification in authentification Coverage Results" MODIFIED="1553631888875" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>authentification.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/projet_microservices$SoireeServiceTest.ic" NAME="SoireeServiceTest Coverage Results" MODIFIED="1553634346113" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>soiree.backend.facade.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/projet_microservices$All_in_projetMicroServices__1_.ic" NAME="All in projetMicroServices (1) Coverage Results" MODIFIED="1553631926658" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/projet_microservices$All_in_evenementOpenAgenda.ic" NAME="All in evenementOpenAgenda Coverage Results" MODIFIED="1553631987043" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+  </component>
+  <component name="CoverageViewManager">
+    <option name="myElementSize" value="22" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="mysql_authentification@authentification_db" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="mysql_authentification@authentification_db" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="mysql_authentification@authentification_db" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="mysql_authentification: schema" type="76f4a085:MysqlImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="mysql_authentification@authentification_db" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="mysql_authentification: schema" type="76f4a085:MysqlImplModel$Schema" />
+        <item name="user: table" type="285a2a93:MysqlImplModel$Table" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="mysql_utilisateur@localhost" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="mysql_utilisateur@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="mysql_utilisateur@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="mysql_utilisateur: schema" type="76f4a085:MysqlImplModel$Schema" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/gateway/Dockerfile">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret selection-end-line="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/gateway/src/main/resources/application.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="10" column="26" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/gateway/src/main/resources/templates/voirSoirees.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="151">
+              <caret line="29" column="48" lean-forward="true" selection-start-line="29" selection-start-column="48" selection-end-line="29" selection-end-column="48" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/utilisateur/src/main/resources/application.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="15" column="32" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/gateway/src/main/java/gateway/GatewayApplication.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/gateway/src/main/java/gateway/frontend/MainController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3840">
+              <caret line="287" column="52" selection-start-line="287" selection-start-column="52" selection-end-line="287" selection-end-column="52" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/authentification/src/main/java/authentification/backend/controllers/AuthentificationController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="450">
+              <caret line="56" column="13" selection-start-line="56" selection-start-column="13" selection-end-line="56" selection-end-column="13" />
+              <folding>
+                <element signature="e#1908#1909#0" expanded="true" />
+                <element signature="e#1946#1947#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/utilisateur/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="855">
+              <caret line="57" column="21" selection-start-line="57" selection-start-column="21" selection-end-line="57" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/utilisateur/Dockerfile">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="7" selection-start-line="7" selection-end-line="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/authentification/src/main/resources/application.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="10" selection-start-line="10" selection-end-line="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="HTML File" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>thym</find>
+      <find>clientRegistrationRepository</find>
+      <find>DONE</find>
+      <find>demandeToken</find>
+      <find>demande</find>
+      <find>findEvenementOpenAgendaByUid</find>
+      <find>existsEvenementOpenAgendaByUid</find>
+      <find>ajouterParticipant</find>
+      <find>getAllUtilisateurs</find>
+      <find>created</find>
+      <find>creat</find>
+      <find>post</find>
+      <find>enle</find>
+      <find>voirProfil</find>
+      <find>date</find>
+      <find>/utilisateur/am</find>
+      <find>open</find>
+      <find>Open</find>
+      <find>OpenAgenda&quot;</find>
+      <find>voirSoiree</find>
+      <find>inscr</find>
+      <find>deconn</find>
+      <find>connexion(</find>
+      <find>system</find>
+      <find>connexion</find>
+    </findStrings>
+    <replaceStrings>
+      <replace />
+    </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/front/src/main/java/front/controllers/MainController.java" />
+        <option value="$PROJECT_DIR$/front/src/main/java/front/FrontApplication.java" />
+        <option value="$PROJECT_DIR$/eurekaServer/src/main/java/eurekaServer/GatewayApplication.java" />
+        <option value="$PROJECT_DIR$/utilisateur/src/main/resources/bootstrap.properties" />
+        <option value="$PROJECT_DIR$/gateway/src/main/resources/bootstrap.properties" />
+        <option value="$PROJECT_DIR$/eurekaServer/src/main/resources/bootstrap.yml" />
+        <option value="$PROJECT_DIR$/gateway/src/main/resources/bootstrap.yml" />
+        <option value="$PROJECT_DIR$/eurekaServer/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/utilisateur/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/gateway/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/gateway/src/main/java/gateway/controllers/MainController.java" />
+        <option value="$PROJECT_DIR$/eurekaServer/pom.xml" />
+        <option value="$PROJECT_DIR$/eurekaServer/src/main/java/eurekaServer/EurekaServerApplication.java" />
+        <option value="$PROJECT_DIR$/utilisateur/src/main/java/utilisateur/backend/controllers/UtilisateurController.java" />
+        <option value="$PROJECT_DIR$/gateway/src/main/java/gateway/filters/pre/LoggingFilter.java" />
+        <option value="$PROJECT_DIR$/eurekaServer/Dockerfile" />
+        <option value="$PROJECT_DIR$/eurekaServer/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/gateway/Dockerfile" />
+        <option value="$PROJECT_DIR$/utilisateur/Dockerfile" />
+        <option value="$PROJECT_DIR$/utilisateur/src/main/java/utilisateur/backend/filters/SecurityInterceptor.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/authentification/Dockerfile" />
+        <option value="$PROJECT_DIR$/evenement/Dockerfile" />
+        <option value="$PROJECT_DIR$/evenement/src/main/java/evenement/backend/filters/SecurityInterceptor.java" />
+        <option value="$PROJECT_DIR$/evenementOpenAgenda/src/main/java/evenementOpenAgenda/backend/filters/SecurityInterceptor.java" />
+        <option value="$PROJECT_DIR$/soiree/src/main/java/soiree/backend/filters/SecurityInterceptor.java" />
+        <option value="$PROJECT_DIR$/gateway/src/main/java/gateway/GatewayApplication.java" />
+        <option value="$PROJECT_DIR$/evenementOpenAgenda/src/main/java/evenementOpenAgenda/backend/EvenementOpenAgendaApplication.java" />
+        <option value="$PROJECT_DIR$/utilisateur/src/main/java/utilisateur/UtilisateurApplication.java" />
+        <option value="$PROJECT_DIR$/evenement/src/main/java/evenement/EvenementApplication.java" />
+        <option value="$PROJECT_DIR$/soiree/src/main/java/soiree/SoireeApplication.java" />
+        <option value="$PROJECT_DIR$/docker-compose.yml" />
+        <option value="$PROJECT_DIR$/soiree/pom.xml" />
+        <option value="$PROJECT_DIR$/soiree/Dockerfile" />
+        <option value="$PROJECT_DIR$/utilisateur/pom.xml" />
+        <option value="$PROJECT_DIR$/gateway/pom.xml" />
+        <option value="$PROJECT_DIR$/authentification/pom.xml" />
+        <option value="$PROJECT_DIR$/gateway/src/main/resources/http_requests/authentification.http" />
+        <option value="$PROJECT_DIR$/utilisateur/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/authentification/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/soiree/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/evenement/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/evenement/pom.xml" />
+        <option value="$PROJECT_DIR$/authentification/src/main/java/authentification/AuthentificationApplication.java" />
+        <option value="$PROJECT_DIR$/authentification/src/main/java/authentification/backend/controllers/AuthentificationController.java" />
+        <option value="$PROJECT_DIR$/evenementOpenAgenda/pom.xml" />
+        <option value="$PROJECT_DIR$/evenementOpenAgenda/Dockerfile" />
+        <option value="$PROJECT_DIR$/evenementOpenAgenda/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/gateway/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/gateway/src/main/java/gateway/frontend/MainController.java" />
+        <option value="$PROJECT_DIR$/gateway/src/main/resources/templates/voirSoirees.html" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="gateway" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="gateway" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="projetMicroServices" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="projetMicroServices" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
+        </path>
+      </expand>
+      <select />
+    </treeState>
+  </component>
+  <component name="MavenRunner">
+    <option name="skipTests" value="true" />
+  </component>
+  <component name="ProjectFrameBounds" fullScreen="true">
+    <option name="width" value="1440" />
+    <option name="height" value="900" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <hideEmptyPackages ProjectPane="false" />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="projet-microservices" type="b2602c69:ProjectViewProjectNode" />
+              <item name="projet-microservices" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="projet-microservices" type="b2602c69:ProjectViewProjectNode" />
+              <item name="projet-microservices" type="462c0819:PsiDirectoryNode" />
+              <item name="authentification" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="projet-microservices" type="b2602c69:ProjectViewProjectNode" />
+              <item name="projet-microservices" type="462c0819:PsiDirectoryNode" />
+              <item name="authentification" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="projet-microservices" type="b2602c69:ProjectViewProjectNode" />
+              <item name="projet-microservices" type="462c0819:PsiDirectoryNode" />
+              <item name="authentification" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="projet-microservices" type="b2602c69:ProjectViewProjectNode" />
+              <item name="projet-microservices" type="462c0819:PsiDirectoryNode" />
+              <item name="authentification" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="projet-microservices" type="b2602c69:ProjectViewProjectNode" />
+              <item name="projet-microservices" type="462c0819:PsiDirectoryNode" />
+              <item name="authentification" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="authentification" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="projet-microservices" type="b2602c69:ProjectViewProjectNode" />
+              <item name="projet-microservices" type="462c0819:PsiDirectoryNode" />
+              <item name="authentification" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="authentification" type="462c0819:PsiDirectoryNode" />
+              <item name="backend" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="projet-microservices" type="b2602c69:ProjectViewProjectNode" />
+              <item name="projet-microservices" type="462c0819:PsiDirectoryNode" />
+              <item name="authentification" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="authentification" type="462c0819:PsiDirectoryNode" />
+              <item name="backend" type="462c0819:PsiDirectoryNode" />
+              <item name="controllers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="projet-microservices" type="b2602c69:ProjectViewProjectNode" />
+              <item name="projet-microservices" type="462c0819:PsiDirectoryNode" />
+              <item name="authentification" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="projet-microservices" type="b2602c69:ProjectViewProjectNode" />
+              <item name="projet-microservices" type="462c0819:PsiDirectoryNode" />
+              <item name="eurekaServer" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="projet-microservices" type="b2602c69:ProjectViewProjectNode" />
+              <item name="projet-microservices" type="462c0819:PsiDirectoryNode" />
+              <item name="evenement" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="projet-microservices" type="b2602c69:ProjectViewProjectNode" />
+              <item name="projet-microservices" type="462c0819:PsiDirectoryNode" />
+              <item name="evenement" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="projet-microservices" type="b2602c69:ProjectViewProjectNode" />
+              <item name="projet-microservices" type="462c0819:PsiDirectoryNode" />
+              <item name="evenement" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="projet-microservices" type="b2602c69:ProjectViewProjectNode" />
+              <item name="projet-microservices" type="462c0819:PsiDirectoryNode" />
+              <item name="evenement" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="projet-microservices" type="b2602c69:ProjectViewProjectNode" />
+              <item name="projet-microservices" type="462c0819:PsiDirectoryNode" />
+              <item name="evenement" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="evenement" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="projet-microservices" type="b2602c69:ProjectViewProjectNode" />
+              <item name="projet-microservices" type="462c0819:PsiDirectoryNode" />
+              <item name="evenement" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="projet-microservices" type="b2602c69:ProjectViewProjectNode" />
+              <item name="projet-microservices" type="462c0819:PsiDirectoryNode" />
+              <item name="evenementOpenAgenda" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="projet-microservices" type="b2602c69:ProjectViewProjectNode" />
+              <item name="projet-microservices" type="462c0819:PsiDirectoryNode" />
+              <item name="evenementOpenAgenda" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="projet-microservices" type="b2602c69:ProjectViewProjectNode" />
+              <item name="projet-microservices" type="462c0819:PsiDirectoryNode" />
+              <item name="evenementOpenAgenda" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="projet-microservices" type="b2602c69:ProjectViewProjectNode" />
+              <item name="projet-microservices" type="462c0819:PsiDirectoryNode" />
+              <item name="evenementOpenAgenda" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="projet-microservices" type="b2602c69:ProjectViewProjectNode" />
+              <item name="projet-microservices" type="462c0819:PsiDirectoryNode" />
+              <item name="evenementOpenAgenda" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="evenementOpenAgenda" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="projet-microservices" type="b2602c69:ProjectViewProjectNode" />
+              <item name="projet-microservices" type="462c0819:PsiDirectoryNode" />
+              <item name="evenementOpenAgenda" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="evenementOpenAgenda" type="462c0819:PsiDirectoryNode" />
+              <item name="backend" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="projet-microservices" type="b2602c69:ProjectViewProjectNode" />
+              <item name="projet-microservices" type="462c0819:PsiDirectoryNode" />
+              <item name="evenementOpenAgenda" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="evenementOpenAgenda" type="462c0819:PsiDirectoryNode" />
+              <item name="backend" type="462c0819:PsiDirectoryNode" />
+              <item name="controllers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="projet-microservices" type="b2602c69:ProjectViewProjectNode" />
+              <item name="projet-microservices" type="462c0819:PsiDirectoryNode" />
+              <item name="evenementOpenAgenda" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="evenementOpenAgenda" type="462c0819:PsiDirectoryNode" />
+              <item name="backend" type="462c0819:PsiDirectoryNode" />
+              <item name="facade" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="projet-microservices" type="b2602c69:ProjectViewProjectNode" />
+              <item name="projet-microservices" type="462c0819:PsiDirectoryNode" />
+              <item name="evenementOpenAgenda" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="evenementOpenAgenda" type="462c0819:PsiDirectoryNode" />
+              <item name="backend" type="462c0819:PsiDirectoryNode" />
+              <item name="filters" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="projet-microservices" type="b2602c69:ProjectViewProjectNode" />
+              <item name="projet-microservices" type="462c0819:PsiDirectoryNode" />
+              <item name="evenementOpenAgenda" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="projet-microservices" type="b2602c69:ProjectViewProjectNode" />
+              <item name="projet-microservices" type="462c0819:PsiDirectoryNode" />
+              <item name="gateway" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="projet-microservices" type="b2602c69:ProjectViewProjectNode" />
+              <item name="projet-microservices" type="462c0819:PsiDirectoryNode" />
+              <item name="gateway" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="projet-microservices" type="b2602c69:ProjectViewProjectNode" />
+              <item name="projet-microservices" type="462c0819:PsiDirectoryNode" />
+              <item name="gateway" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="projet-microservices" type="b2602c69:ProjectViewProjectNode" />
+              <item name="projet-microservices" type="462c0819:PsiDirectoryNode" />
+              <item name="gateway" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="projet-microservices" type="b2602c69:ProjectViewProjectNode" />
+              <item name="projet-microservices" type="462c0819:PsiDirectoryNode" />
+              <item name="gateway" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="gateway" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="projet-microservices" type="b2602c69:ProjectViewProjectNode" />
+              <item name="projet-microservices" type="462c0819:PsiDirectoryNode" />
+              <item name="gateway" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="gateway" type="462c0819:PsiDirectoryNode" />
+              <item name="frontend" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="projet-microservices" type="b2602c69:ProjectViewProjectNode" />
+              <item name="projet-microservices" type="462c0819:PsiDirectoryNode" />
+              <item name="gateway" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="projet-microservices" type="b2602c69:ProjectViewProjectNode" />
+              <item name="projet-microservices" type="462c0819:PsiDirectoryNode" />
+              <item name="gateway" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="projet-microservices" type="b2602c69:ProjectViewProjectNode" />
+              <item name="projet-microservices" type="462c0819:PsiDirectoryNode" />
+              <item name="soiree" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="projet-microservices" type="b2602c69:ProjectViewProjectNode" />
+              <item name="projet-microservices" type="462c0819:PsiDirectoryNode" />
+              <item name="soiree" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="projet-microservices" type="b2602c69:ProjectViewProjectNode" />
+              <item name="projet-microservices" type="462c0819:PsiDirectoryNode" />
+              <item name="soiree" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="projet-microservices" type="b2602c69:ProjectViewProjectNode" />
+              <item name="projet-microservices" type="462c0819:PsiDirectoryNode" />
+              <item name="soiree" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="projet-microservices" type="b2602c69:ProjectViewProjectNode" />
+              <item name="projet-microservices" type="462c0819:PsiDirectoryNode" />
+              <item name="utilisateur" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="projet-microservices" type="b2602c69:ProjectViewProjectNode" />
+              <item name="projet-microservices" type="462c0819:PsiDirectoryNode" />
+              <item name="utilisateur" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="projet-microservices" type="b2602c69:ProjectViewProjectNode" />
+              <item name="projet-microservices" type="462c0819:PsiDirectoryNode" />
+              <item name="utilisateur" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="projet-microservices" type="b2602c69:ProjectViewProjectNode" />
+              <item name="projet-microservices" type="462c0819:PsiDirectoryNode" />
+              <item name="utilisateur" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelOrder2" value="2" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RequestMappingsPanelWidth2" value="75" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554330618467" />
+    <property name="database.console.LAST_STATE" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="show.run.dashboard.notification" value="false" />
+    <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
+  </component>
+  <component name="RecentsManager">
+    <key name="ExtractSuperBase.RECENT_KEYS">
+      <recent name="soiree.backend.modele.facade" />
+      <recent name="gateway.backend.facade" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/front/src/main/resources" />
+      <recent name="$PROJECT_DIR$/gateway/src/main/resources/templates" />
+      <recent name="$PROJECT_DIR$/gateway/src/main/resources/templates/auth" />
+      <recent name="$PROJECT_DIR$/utilisateur/src/main/webapp" />
+      <recent name="$PROJECT_DIR$/utilisateur/src/main/resources/WEB-INF" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="soiree.backend.facade" />
+      <recent name="utilisateur.backend" />
+      <recent name="utilisateur.backend.modele.facade" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/soiree" />
+      <recent name="$PROJECT_DIR$/evenement" />
+      <recent name="$PROJECT_DIR$/authentification" />
+      <recent name="$PROJECT_DIR$/gateway/src/main/resources" />
+      <recent name="$PROJECT_DIR$/eurekaServer/src/main/resources" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="gateway.filters.pre" />
+      <recent name="eurekaServer" />
+      <recent name="front" />
+      <recent name="serverEureka" />
+      <recent name="eureka.backend" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="utilisateur.backend.modele.entities" />
+    </key>
+  </component>
+  <component name="RestClientSettings">
+    <option name="REQUEST_HISTORY">
+      <list>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:8080/authentification/inscription" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;  &quot;pseudo&quot;: &quot;boby&quot;,&#10;  &quot;password&quot;: &quot;Bob45&quot;&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:8080/authentification/inscription" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;  &quot;pseudo&quot;: &quot;boby&quot;,&#10;  &quot;password&quot;: &quot;Alice45&quot;&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:8080/authentification/inscription" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;  &quot;pseudo&quot;: &quot;bob&quot;,&#10;  &quot;password&quot;: &quot;Bob45&quot;&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:8080/authentification/inscription" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;  &quot;pseudo&quot;: &quot;zozo&quot;,&#10;  &quot;password&quot;: &quot;zozo&quot;&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:8080/authentification/connexion" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;  &quot;pseudo&quot;: &quot;zozo&quot;,&#10;  &quot;password&quot;: &quot;zozo&quot;&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:8080/utilisateur/" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Authorization" />
+                <option name="value" value="eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJib2IiLCJwc2V1ZG8iOiJib2IiLCJleHAiOjE1NTMyNjAzMjB9.yUEUF3Suj97U4iyZwIkOvzs8q_E9V8S7afENuMIqQzd2vVdeG8Q2kqA95hhY0SMxNgP6zXYHlx_4wQv8fGyR9A" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/xml" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="&lt;Utilisateur&gt;&#10;  &lt;pseudo&gt;zozo&lt;/pseudo&gt;&#10;&lt;/Utilisateur&gt;" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://127.0.0.1:8082" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="application/json;charset=UTF-8" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="PUT" />
+          <option name="urlBase" value="http://localhost:8080/utilisateur/4" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Authorization" />
+                <option name="value" value="eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJib2IiLCJwc2V1ZG8iOiJib2IiLCJleHAiOjE1NTMyNjAzMjB9.yUEUF3Suj97U4iyZwIkOvzs8q_E9V8S7afENuMIqQzd2vVdeG8Q2kqA95hhY0SMxNgP6zXYHlx_4wQv8fGyR9A" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;  &quot;id&quot; : &quot;1&quot;,&#10;  &quot;pseudo&quot; : &quot;bob&quot;,&#10;  &quot;nom&quot; : &quot;Martinet&quot;,&#10;  &quot;prenom&quot; : &quot;Bob&quot;,&#10;  &quot;adresse&quot; : &quot;Rue des magnolias&quot;,&#10;  &quot;ville&quot; : &quot;Orleans&quot;,&#10;  &quot;codePostal&quot; : &quot;4500021&quot;,&#10;  &quot;email&quot; : &quot;bob.martinet@gmail.com&quot;,&#10;  &quot;dateInscription&quot; : null,&#10;  &quot;dateNaiss&quot; : &quot;&quot;,&#10;  &quot;amis&quot; : null&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:8080/utilisateur/bob" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Authorization" />
+                <option name="value" value="eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJib2IiLCJwc2V1ZG8iOiJib2IiLCJleHAiOjE1NTMyNjAzMjB9.yUEUF3Suj97U4iyZwIkOvzs8q_E9V8S7afENuMIqQzd2vVdeG8Q2kqA95hhY0SMxNgP6zXYHlx_4wQv8fGyR9A" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:8080/authentification/inscription" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;  &quot;pseudo&quot;: &quot;bobby&quot;,&#10;  &quot;password&quot;: &quot;Bob45&quot;&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:8080/utilisateur/" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Authorization" />
+                <option name="value" value="eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJib2IiLCJwc2V1ZG8iOiJib2IiLCJleHAiOjE1NTMyNjAzMjB9.yUEUF3Suj97U4iyZwIkOvzs8q_E9V8S7afENuMIqQzd2vVdeG8Q2kqA95hhY0SMxNgP6zXYHlx_4wQv8fGyR9A" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;  &quot;pseudo&quot;: &quot;zozo&quot;&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:8080/authentification/inscription" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;  &quot;pseudo&quot;: &quot;bob&quot;,&#10;  &quot;password&quot;: &quot;Alice45&quot;&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:8080/utilisateur/" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;  &quot;pseudo&quot;: &quot;zozo&quot;,&#10;  &quot;password&quot;: &quot;Zozo123&quot;&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:8080/utilisateur/checkToken" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Authorization" />
+                <option name="value" value="eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJib2IiLCJwc2V1ZG8iOiJib2IiLCJleHAiOjE1NTMyNjAzMjB9.yUEUF3Suj97U4iyZwIkOvzs8q_E9V8S7afENuMIqQzd2vVdeG8Q2kqA95hhY0SMxNgP6zXYHlx_4wQv8fGyR9A" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:8080/authentification/connexion" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;  &quot;pseudo&quot;: &quot;bob&quot;,&#10;  &quot;password&quot;: &quot;Bob45&quot;&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:8080/utilisateur/checkToken" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Authorization" />
+                <option name="value" value="eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhIiwicHNldWRvIjoiYSIsImV4cCI6MTU1MzE4NjI4MX0.aEcEFlppyrry1H5C5lRAq9XpCt140NsHqUXoTTPhGNt69wACauqFnEAp5lrHe0y9cKT68o5qKrJCxB0s4zuJRw" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:8080/utilisateur/checkToken" />
+          <option name="urlPath" value="" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:8080/authentification/connexion" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;  &quot;pseudo&quot;: &quot;Alice&quot;,&#10;  &quot;password&quot;: &quot;Alice45&quot;&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:8080/authentification/connexion" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;  &quot;pseudo&quot;: &quot;bob&quot;,&#10;  &quot;password&quot;: &quot;Alice45&quot;&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:8081/connexion" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;  &quot;pseudo&quot;: &quot;a&quot;,&#10;  &quot;password&quot;: &quot;a&quot;&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:8081/connexion" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;  &quot;pseudo&quot;: &quot;b&quot;,&#10;  &quot;password&quot;: &quot;e&quot;&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:8081/connexion" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;  &quot;pseudo&quot;: &quot;a&quot;,&#10;  &quot;password&quot;: &quot;e&quot;&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:8081/inscription" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;  &quot;pseudo&quot;: &quot;a&quot;,&#10;  &quot;password&quot;: &quot;a&quot;&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:8081/connexion" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;  &quot;pseudo&quot;: &quot;b&quot;,&#10;  &quot;password&quot;: &quot;a&quot;&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:8081/login" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;  &quot;pseudo&quot;: &quot;a&quot;,&#10;  &quot;password&quot;: &quot;a&quot;&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:8080/authentification/login" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;  &quot;pseudo&quot;: &quot;a&quot;,&#10;  &quot;password&quot;: &quot;a&quot;&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:8080/utilisateur/checkToken" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Authorization" />
+                <option name="value" value="eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhIiwicHNldWRvIjoiYSIsImV4cCI6MTU1MzE4NDI4M30.HkxZMjg4ol8KTRdCYxeX4oZu3vdVT6EY0rQRKsgHaniZIGsc0GuFP8d21EFw7tfmuEIOWqezpEbcx5SglmVCnQ" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:8080/utilisateur/checkToken" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Authorization" />
+                <option name="value" value="eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhIiwicHNldWRvIjoiYSIsImV4cCI6MTU1MzE4MzA1Nn0.8SSksV7O-opI3nMqQxDAPfukZWATt586JDrBbd4hMykO2XNuBQv57ZNfwMH6rEWHoKNX3bAT1Hl-9NM0CE2RSA" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:8080/utilisateur/checkToken" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="token" />
+                <option name="value" value="eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhIiwicHNldWRvIjoiYSIsImV4cCI6MTU1MzE4MzA1Nn0.8SSksV7O-opI3nMqQxDAPfukZWATt586JDrBbd4hMykO2XNuBQv57ZNfwMH6rEWHoKNX3bAT1Hl-9NM0CE2RSA" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:8080/utilisateur/" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="token" />
+                <option name="value" value="eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhIiwicHNldWRvIjoiYSIsImV4cCI6MTU1MzE4MzA1Nn0.8SSksV7O-opI3nMqQxDAPfukZWATt586JDrBbd4hMykO2XNuBQv57ZNfwMH6rEWHoKNX3bAT1Hl-9NM0CE2RSA" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:8080/utilisateur/" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Authorization" />
+                <option name="value" value="eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhIiwicHNldWRvIjoiYSIsImV4cCI6MTU1MzE4MzA1Nn0.8SSksV7O-opI3nMqQxDAPfukZWATt586JDrBbd4hMykO2XNuBQv57ZNfwMH6rEWHoKNX3bAT1Hl-9NM0CE2RSA" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:8080/utilisateur/" />
+          <option name="urlPath" value="" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:8080/evenement/" />
+          <option name="urlPath" value="" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://127.0.0.1:8081/login" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="application/json;charset=UTF-8" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://127.0.0.1:8083" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="application/json;charset=UTF-8" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:8080/authent/login" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;  &quot;username&quot;: &quot;a&quot;,&#10;  &quot;password&quot;: &quot;a&quot;&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:8080/login" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;  &quot;username&quot;: &quot;a&quot;,&#10;  &quot;password&quot;: &quot;a&quot;&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:8080/logout" />
+          <option name="urlPath" value="" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:8080/login" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;  &quot;username&quot;: &quot;maxime&quot;,&#10;  &quot;password&quot;: &quot;maxime&quot;&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:8080/login" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;  &quot;pseudo&quot;: &quot;maxime&quot;,&#10;  &quot;password&quot;: &quot;maxime&quot;&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:8080/authentification/login" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;  &quot;pseudo&quot;: &quot;maxime&quot;,&#10;  &quot;password&quot;: &quot;maxime&quot;&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:8080/utilisateur/4" />
+          <option name="urlPath" value="" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="PUT" />
+          <option name="urlBase" value="http://localhost:8080/utilisateur/4" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;  &quot;pseudo&quot;: &quot;zozo&quot;,&#10;  &quot;password&quot;: &quot;Zozo123&quot;,&#10;  &quot;nom&quot;: &quot;Robert&quot;,&#10;  &quot;prenom&quot;: &quot;Martin&quot;,&#10;  &quot;adresse&quot;: &quot;123 rue ABC&quot;,&#10;  &quot;codePostal&quot;: &quot;45000&quot;,&#10;  &quot;email&quot;: &quot;robert.martin@gmail.com&quot;,&#10;  &quot;dateNaiss&quot;: &quot;1980-01-01&quot;&#10;&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="PUT" />
+          <option name="urlBase" value="http://localhost:8080/utilisateur/4" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;  &quot;nom&quot;: &quot;Robert&quot;,&#10;  &quot;prenom&quot;: &quot;Martin&quot;,&#10;  &quot;adresse&quot;: &quot;123 rue ABC&quot;,&#10;  &quot;codePostal&quot;: &quot;45000&quot;,&#10;  &quot;email&quot;: &quot;robert.martin@gmail.com&quot;,&#10;  &quot;dateNaiss&quot;: &quot;1980-01-01&quot;&#10;&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="PUT" />
+          <option name="urlBase" value="http://localhost:8080/utilisateur/4" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;  &quot;nom&quot;: &quot;Robert&quot;,&#10;  &quot;prenom&quot;: &quot;Martin&quot;,&#10;  &quot;adresse&quot;: &quot;123 rue ABC&quot;,&#10;  &quot;codePostal&quot;: &quot;45000&quot;,&#10;  &quot;email&quot;: &quot;robert.martin@gmail.com&quot;,&#10;  &quot;dateNaiss&quot;: &quot;1980-01-01&quot;&#10;          &#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:8080/utilisateur/" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/xml" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="&lt;Utilisateur&gt;&#10;  &lt;pseudo&gt;zozo&lt;/pseudo&gt;&#10;  &lt;password&gt;Zozo123&lt;/password&gt;&#10;&lt;/Utilisateur&gt;" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:8080/authentification/login" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;  &quot;pseudo&quot;: &quot;zozo&quot;,&#10;  &quot;password&quot;: &quot;Zozo123&quot;&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:8080/utilisateur/" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="token" />
+                <option name="value" value="maxime" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:8080/authentification/login" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;  &quot;login&quot;: &quot;maxime&quot;,&#10;  &quot;password&quot;: &quot;maxime&quot;&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:8080/authentification/login" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/x-www-form-urlencoded" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="login=maxime&amp;password=maxime" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://127.0.0.1:8082" />
+          <option name="urlPath" value="" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="login=maxime" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+      </list>
+    </option>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Docker.docker-compose.yml.gateway: Compose Deployment">
+    <configuration name="Tout" type="CompoundRunConfigurationType">
+      <toRun name="EvenementOpenAgendaApplication" type="SpringBootApplicationConfigurationType" />
+      <toRun name="GatewayApplication" type="SpringBootApplicationConfigurationType" />
+      <toRun name="UtilisateurApplication" type="SpringBootApplicationConfigurationType" />
+      <toRun name="EvenementApplication" type="SpringBootApplicationConfigurationType" />
+      <toRun name="SoireeApplication" type="SpringBootApplicationConfigurationType" />
+      <toRun name="AuthentificationApplication" type="SpringBootApplicationConfigurationType" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unnamed" type="CompoundRunConfigurationType">
+      <toRun name="AuthentificationServiceTest" type="JUnit" />
+      <toRun name="UtilisateurServiceTest" type="JUnit" />
+      <toRun name="EvenementServiceTest" type="JUnit" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="CompoundRunConfigurationType">
+      <toRun name="AuthentificationServiceTest" type="JUnit" />
+      <toRun name="UtilisateurServiceTest" type="JUnit" />
+      <toRun name="EvenementServiceTest" type="JUnit" />
+      <method v="2" />
+    </configuration>
+    <configuration name="auth + user" type="CompoundRunConfigurationType">
+      <toRun name="UtilisateurApplication" type="SpringBootApplicationConfigurationType" />
+      <toRun name="AuthentificationApplication" type="SpringBootApplicationConfigurationType" />
+      <method v="2" />
+    </configuration>
+    <configuration name="gw + auth" type="CompoundRunConfigurationType">
+      <toRun name="AuthentificationApplication" type="SpringBootApplicationConfigurationType" />
+      <toRun name="GatewayApplication" type="SpringBootApplicationConfigurationType" />
+      <method v="2" />
+    </configuration>
+    <configuration name="gw+user" type="CompoundRunConfigurationType">
+      <toRun name="GatewayApplication" type="SpringBootApplicationConfigurationType" />
+      <toRun name="UtilisateurApplication" type="SpringBootApplicationConfigurationType" />
+      <method v="2" />
+    </configuration>
+    <configuration name="qw + auth + user" type="CompoundRunConfigurationType">
+      <toRun name="AuthentificationApplication" type="SpringBootApplicationConfigurationType" />
+      <toRun name="UtilisateurApplication" type="SpringBootApplicationConfigurationType" />
+      <toRun name="GatewayApplication" type="SpringBootApplicationConfigurationType" />
+      <method v="2" />
+    </configuration>
+    <configuration name="authentification#1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$PROJECT_DIR$/gateway/src/main/resources/http_requests/authentification.http">
+      <method v="2" />
+    </configuration>
+    <configuration name="authentification#2" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$PROJECT_DIR$/gateway/src/main/resources/http_requests/authentification.http" index="2">
+      <method v="2" />
+    </configuration>
+    <configuration name="AuthentificationServiceTest" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
+      <module name="authentification" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="authentification.backend.facade.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="authentification.backend.facade" />
+      <option name="MAIN_CLASS_NAME" value="authentification.backend.facade.AuthentificationServiceTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EvenementServiceTest" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
+      <module name="evenement" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="evenement.backend.facade.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="evenement.backend.facade" />
+      <option name="MAIN_CLASS_NAME" value="evenement.backend.facade.EvenementServiceTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UtilisateurServiceTest" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
+      <module name="utilisateur" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="utilisateur.backend.facade.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="utilisateur.backend.facade" />
+      <option name="MAIN_CLASS_NAME" value="utilisateur.backend.facade.UtilisateurServiceTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AuthentificationApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="authentification" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="authentification.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="authentification.AuthentificationApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AuthentificationApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="authentification" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="authentification.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="authentification.AuthentificationApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DemoApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="demo" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.demo.DemoApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EurekaServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="eurekaServer" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="eurekaServer.EurekaServerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EvenementApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="evenement" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="evenement.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="evenement.EvenementApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EvenementOpenAgendaApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="evenementOpenAgenda" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="evenementOpenAgenda.backend.EvenementOpenAgendaApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FrontApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="front" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="front.FrontApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="gateway" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="gateway.GatewayApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SoireeApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="soiree" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="authentification.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="soiree.SoireeApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UtilisateurApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="utilisateur" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="utilisateur.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="utilisateur.UtilisateurApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="docker-compose.yml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="docker-compose.yml.evenementopenagenda: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="evenementopenagenda" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="docker-compose.yml.gateway: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="gateway" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Compound.Unnamed" />
+      <item itemvalue="Compound.auth + user" />
+      <item itemvalue="Compound.gw + auth" />
+      <item itemvalue="Compound.qw + auth + user" />
+      <item itemvalue="Compound.Tout" />
+      <item itemvalue="Compound.gw+user" />
+      <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
+      <item itemvalue="Docker.docker-compose.yml.evenementopenagenda: Compose Deployment" />
+      <item itemvalue="Docker.docker-compose.yml.gateway: Compose Deployment" />
+      <item itemvalue="HTTP Request.authentification#1" />
+      <item itemvalue="HTTP Request.authentification#2" />
+      <item itemvalue="JUnit.AuthentificationServiceTest" />
+      <item itemvalue="JUnit.EvenementServiceTest" />
+      <item itemvalue="JUnit.UtilisateurServiceTest" />
+      <item itemvalue="Spring Boot.AuthentificationApplication" />
+      <item itemvalue="Spring Boot.GatewayApplication" />
+      <item itemvalue="Spring Boot.UtilisateurApplication" />
+      <item itemvalue="Spring Boot.EvenementApplication" />
+      <item itemvalue="Spring Boot.SoireeApplication" />
+      <item itemvalue="Spring Boot.EvenementOpenAgendaApplication" />
+      <item itemvalue="Spring Boot.DemoApplication" />
+      <item itemvalue="Spring Boot.FrontApplication" />
+      <item itemvalue="Spring Boot.EurekaServerApplication" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Docker.docker-compose.yml.gateway: Compose Deployment" />
+        <item itemvalue="Docker.docker-compose.yml.evenementopenagenda: Compose Deployment" />
+        <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
+        <item itemvalue="HTTP Request.authentification#1" />
+        <item itemvalue="HTTP Request.authentification#2" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e5d417d5-6ac5-4b80-aa2d-0c01535bb317" name="Default Changelist" comment="" />
+      <created>1552033552876</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1552033552876</updated>
+      <workItem from="1552033554395" duration="2919000" />
+      <workItem from="1552037636430" duration="5640000" />
+      <workItem from="1552050236838" duration="669000" />
+      <workItem from="1552316011670" duration="260000" />
+      <workItem from="1552322361139" duration="7369000" />
+      <workItem from="1552338850238" duration="419000" />
+      <workItem from="1552339425863" duration="463000" />
+      <workItem from="1552391709083" duration="1667000" />
+      <workItem from="1552393420741" duration="4951000" />
+      <workItem from="1552405541822" duration="2976000" />
+      <workItem from="1552426469374" duration="17000" />
+      <workItem from="1552478501080" duration="2834000" />
+      <workItem from="1552491682217" duration="1779000" />
+      <workItem from="1552497203648" duration="327000" />
+      <workItem from="1552497555790" duration="55000" />
+      <workItem from="1552498520807" duration="5763000" />
+      <workItem from="1552554503527" duration="3073000" />
+      <workItem from="1552565193852" duration="1783000" />
+      <workItem from="1552573885112" duration="7201000" />
+      <workItem from="1552637693278" duration="3893000" />
+      <workItem from="1552652279118" duration="14611000" />
+      <workItem from="1552746332662" duration="5889000" />
+      <workItem from="1552754019748" duration="755000" />
+      <workItem from="1552837725414" duration="10518000" />
+      <workItem from="1552899348348" duration="4700000" />
+      <workItem from="1552905631390" duration="473000" />
+      <workItem from="1552906121405" duration="4106000" />
+      <workItem from="1552918433921" duration="36000" />
+      <workItem from="1552918531300" duration="14437000" />
+      <workItem from="1552938660122" duration="4629000" />
+      <workItem from="1552977958678" duration="2697000" />
+      <workItem from="1553007900854" duration="1264000" />
+      <workItem from="1553009179015" duration="3673000" />
+      <workItem from="1553028767029" duration="133000" />
+      <workItem from="1553068730782" duration="249000" />
+      <workItem from="1553087495484" duration="19001000" />
+      <workItem from="1553165428871" duration="35000" />
+      <workItem from="1553165583996" duration="8029000" />
+      <workItem from="1553185909235" duration="4519000" />
+      <workItem from="1553200639008" duration="108000" />
+      <workItem from="1553200789253" duration="2911000" />
+      <workItem from="1553240729713" duration="7319000" />
+      <workItem from="1553249880897" duration="73000" />
+      <workItem from="1553254859534" duration="2697000" />
+      <workItem from="1553260113797" duration="19388000" />
+      <workItem from="1553335116128" duration="28033000" />
+      <workItem from="1553381423673" duration="181000" />
+      <workItem from="1553416814110" duration="5801000" />
+      <workItem from="1553445279008" duration="6905000" />
+      <workItem from="1553500525228" duration="14840000" />
+      <workItem from="1553527239977" duration="39000" />
+      <workItem from="1553535760702" duration="15548000" />
+      <workItem from="1553583089799" duration="166000" />
+      <workItem from="1553603041653" duration="2917000" />
+      <workItem from="1553620844587" duration="20458000" />
+      <workItem from="1553672848952" duration="1071000" />
+      <workItem from="1553679966433" duration="2047000" />
+      <workItem from="1553688806039" duration="9157000" />
+      <workItem from="1553702477512" duration="8796000" />
+      <workItem from="1553715076560" duration="257000" />
+      <workItem from="1553715548582" duration="12059000" />
+      <workItem from="1553764066460" duration="9091000" />
+      <workItem from="1553787852627" duration="82000" />
+      <workItem from="1553790808971" duration="1086000" />
+      <workItem from="1553794506919" duration="5688000" />
+      <workItem from="1553805851019" duration="389000" />
+      <workItem from="1553806249906" duration="164000" />
+      <workItem from="1553806466047" duration="90000" />
+      <workItem from="1553806598184" duration="575000" />
+      <workItem from="1553807185066" duration="8400000" />
+      <workItem from="1553845727538" duration="851000" />
+      <workItem from="1553849829956" duration="6275000" />
+      <workItem from="1553878214527" duration="4012000" />
+      <workItem from="1553885711426" duration="17970000" />
+      <workItem from="1553933164797" duration="16077000" />
+      <workItem from="1554018406852" duration="1143000" />
+      <workItem from="1554299463146" duration="11590000" />
+      <workItem from="1554319891756" duration="7393000" />
+      <workItem from="1554331653617" duration="99000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="UtilisateurServiceTest - 2019.03.27 at 23h 50m 43s.xml">
+      <configuration name="UtilisateurServiceTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UtilisateurServiceTest - 2019.03.27 at 23h 51m 09s.xml">
+      <configuration name="UtilisateurServiceTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UtilisateurServiceTest - 2019.03.27 at 23h 52m 46s.xml">
+      <configuration name="UtilisateurServiceTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UtilisateurServiceTest_supprimerInvitationSoireeOK - 2019.03.27 at 23h 54m 38s.xml">
+      <configuration name="UtilisateurServiceTest.supprimerInvitationSoireeOK" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UtilisateurServiceTest - 2019.03.27 at 23h 55m 51s.xml">
+      <configuration name="UtilisateurServiceTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Feature__evenement - 2019.03.28 at 21h 07m 17s.xml">
+      <configuration name="Feature: evenement" configurationId="CucumberJavaRunConfigurationType" />
+    </history-entry>
+    <history-entry file="EvenementControllerTest - 2019.03.28 at 21h 07m 46s.xml">
+      <configuration name="EvenementControllerTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="EvenementControllerTest - 2019.03.28 at 21h 08m 04s.xml">
+      <configuration name="EvenementControllerTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="EvenementControllerTest - 2019.03.28 at 21h 09m 25s.xml">
+      <configuration name="EvenementControllerTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Feature__evenement - 2019.03.28 at 21h 15m 37s.xml">
+      <configuration name="Feature: evenement" configurationId="CucumberJavaRunConfigurationType" />
+    </history-entry>
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="405558000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.31759655" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info id="Web" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32891566" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49642345" weight="0.30843374" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3927711" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32891566" />
+      <window_info anchor="bottom" id="Spring" order="7" sideWeight="0.49928468" weight="0.32891566" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32891566" />
+      <window_info anchor="bottom" id="Docker" order="9" sideWeight="0.49570817" visible="true" weight="0.46626505" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50429183" side_tool="true" weight="0.4698795" />
+      <window_info anchor="bottom" id="Java Enterprise" order="11" />
+      <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="13" />
+      <window_info anchor="bottom" id="Messages" order="14" weight="0.32891566" />
+      <window_info anchor="bottom" id="TypeScript" order="15" />
+      <window_info anchor="bottom" id="Duplicate detector" order="16" weight="0.32891566" />
+      <window_info anchor="bottom" id="Inspection Results" order="17" weight="0.32891566" />
+      <window_info anchor="bottom" id="Database Console" order="18" weight="0.32891566" />
+      <window_info anchor="bottom" id="SonarQube" order="19" weight="0.32891566" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.24964234" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="3" sideWeight="0.646988" visible="true" weight="0.10658083" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="Database" order="6" sideWeight="0.62027836" weight="0.24749643" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
+      <window_info anchor="right" id="Bean Validation" order="9" weight="0.3297568" />
+      <window_info anchor="right" id="Coverage" order="10" sideWeight="0.35301206" side_tool="true" visible="true" weight="0.1137339" />
+      <window_info anchor="right" id="Redis Servers" order="11" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/eurekaServer/src/main/java/config/UtilisateurApplication.java</url>
+          <line>17</line>
+          <properties class="utilisateur.UtilisateurApplication">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/eurekaServer/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utilisateur/src/main/java/utilisateur/backend/filters/SecurityInterceptor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="327">
+          <caret line="33" column="10" selection-start-line="33" selection-start-column="10" selection-end-line="33" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gateway/src/main/resources/templates/connexion.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front/front.iml" />
+    <entry file="file://$PROJECT_DIR$/front/pom.xml" />
+    <entry file="file://$PROJECT_DIR$/gateway/gateway.iml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/evenement/Dockerfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="39" selection-start-line="4" selection-start-column="39" selection-end-line="4" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/evenement/src/main/java/evenement/backend/filters/SecurityInterceptor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="21" column="20" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/soiree/src/main/java/soiree/backend/filters/SecurityInterceptor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="21" column="20" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utilisateur/src/main/java/utilisateur/backend/controllers/UtilisateurController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2505">
+          <caret line="187" column="5" selection-start-line="187" selection-start-column="5" selection-end-line="187" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utilisateur/src/main/java/utilisateur/UtilisateurApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/evenement/src/main/java/evenement/EvenementApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="72" selection-start-line="4" selection-start-column="72" selection-end-line="4" selection-end-column="72" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/eurekaServer/Dockerfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/evenementOpenAgenda/src/main/java/evenementOpenAgenda/backend/filters/SecurityInterceptor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="415">
+          <caret line="32" selection-start-line="32" selection-end-line="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="246">
+          <caret line="25" column="44" selection-start-line="25" selection-start-column="44" selection-end-line="25" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/soiree/src/main/java/soiree/SoireeApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="5" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#331#332#0" expanded="true" />
+            <element signature="e#390#391#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/soiree/src/main/java/soiree/backend/repository/SoireeRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/soiree/src/main/java/soiree/backend/modele/entities/Soiree.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-194">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/soiree/src/main/java/soiree/backend/facade/SoireeServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-172">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gateway/src/main/resources/http_requests/utilisateur.http">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-139" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/soiree/Dockerfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="36" selection-start-line="4" selection-start-column="36" selection-end-line="4" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/authentification/Dockerfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gateway/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="39" column="21" selection-start-line="39" selection-start-column="21" selection-end-line="39" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/soiree/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-42">
+          <caret line="26" column="20" selection-start-line="26" selection-start-column="20" selection-end-line="26" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/eurekaServer/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="627">
+          <caret line="68" column="23" selection-start-line="68" selection-start-column="23" selection-end-line="68" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gateway/src/main/resources/http_requests/authentification.http">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/evenement/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="32" selection-start-line="18" selection-start-column="32" selection-end-line="18" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/soiree/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="30" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/authentification/src/main/java/authentification/AuthentificationApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="22" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/authentification/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="628">
+          <caret line="58" column="30" selection-start-line="58" selection-start-column="30" selection-end-line="58" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/evenement/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-277">
+          <caret line="17" column="18" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/evenementOpenAgenda/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-499">
+          <caret line="17" column="18" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/evenementOpenAgenda/Dockerfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/evenementOpenAgenda/src/main/java/evenementOpenAgenda/backend/facade/EvenementOpenAgendaServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="773">
+          <caret line="106" column="84" selection-start-line="106" selection-start-column="84" selection-end-line="106" selection-end-column="84" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/evenementOpenAgenda/src/main/java/evenementOpenAgenda/backend/facade/EvenementOpenAgendaService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="10" column="34" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/evenementOpenAgenda/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="12" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/evenementOpenAgenda/src/main/java/evenementOpenAgenda/backend/controllers/EvenementOpenAgendaController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="21" selection-start-line="20" selection-start-column="4" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docker-compose.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1814">
+          <caret line="121" column="16" selection-start-line="121" selection-start-column="16" selection-end-line="121" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/evenementOpenAgenda/src/main/java/evenementOpenAgenda/backend/EvenementOpenAgendaApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="13" column="17" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gateway/src/main/java/gateway/frontend/FragmentsController.java" />
+    <entry file="file://$PROJECT_DIR$/authentification/src/main/java/authentification/backend/modele/entities/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="37">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gateway/Dockerfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gateway/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="26" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gateway/src/main/java/gateway/GatewayApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gateway/src/main/java/gateway/frontend/MainController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3840">
+          <caret line="287" column="52" selection-start-line="287" selection-start-column="52" selection-end-line="287" selection-end-column="52" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/authentification/src/main/java/authentification/backend/controllers/AuthentificationController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="56" column="13" selection-start-line="56" selection-start-column="13" selection-end-line="56" selection-end-column="13" />
+          <folding>
+            <element signature="e#1908#1909#0" expanded="true" />
+            <element signature="e#1946#1947#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utilisateur/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="855">
+          <caret line="57" column="21" selection-start-line="57" selection-start-column="21" selection-end-line="57" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utilisateur/Dockerfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/authentification/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utilisateur/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="32" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gateway/src/main/resources/templates/voirSoirees.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="151">
+          <caret line="29" column="48" lean-forward="true" selection-start-line="29" selection-start-column="48" selection-end-line="29" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <last-edited>authentification:war</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.5" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Spring</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>projetMicroServices</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: ch.qos.logback:logback-classic:1.2.3</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+  <component name="mavenExecuteGoalHistory">
+    <option value="$PROJECT_DIR$" />
+    <option value="clean org.jacoco:jacoco-maven-plugin:prepare-agent install -Dmaven.test.failure.ignore=true sonar:sonar" />
+    <option value="clean" />
+  </component>
+</project>

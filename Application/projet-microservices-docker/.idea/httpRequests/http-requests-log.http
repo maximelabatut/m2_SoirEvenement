@@ -1,0 +1,486 @@
+POST http://localhost:8080/authentification/inscription
+Content-Type: application/json
+
+{
+  "pseudo": "boby",
+  "password": "Bob45"
+}
+
+<> 2019-04-03T084601.504.json
+
+###
+
+POST http://localhost:8080/authentification/inscription
+Content-Type: application/json
+
+{
+  "pseudo": "boby",
+  "password": "Bob45"
+}
+
+<> 2019-04-03T084556.504.json
+
+###
+
+POST http://localhost:8080/authentification/inscription
+Content-Type: application/json
+
+{
+  "pseudo": "boby",
+  "password": "Bob45"
+}
+
+<> 2019-04-03T084537.504.json
+
+###
+
+POST http://localhost:8080/authentification/inscription
+Content-Type: application/json
+
+{
+  "pseudo": "boby",
+  "password": "Alice45"
+}
+
+<> 2019-04-03T082702.500.json
+
+###
+
+POST http://localhost:8080/authentification/inscription
+Content-Type: application/json
+
+{
+  "pseudo": "bob",
+  "password": "Bob45"
+}
+
+<> 2019-04-03T082651.409.json
+
+###
+
+POST http://localhost:8080/authentification/inscription
+Content-Type: application/json
+
+{
+  "pseudo": "bob",
+  "password": "Bob45"
+}
+
+<> 2019-04-03T082647.504.json
+
+###
+
+POST http://localhost:8080/authentification/inscription
+Content-Type: application/json
+
+{
+  "pseudo": "zozo",
+  "password": "zozo"
+}
+
+<> 2019-04-03T081450.500.json
+
+###
+
+POST http://localhost:8080/authentification/connexion
+Content-Type: application/json
+
+{
+  "pseudo": "zozo",
+  "password": "zozo"
+}
+
+<> 2019-04-03T081407.404.json
+
+###
+
+POST http://localhost:8080/utilisateur/
+Authorization: eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJib2IiLCJwc2V1ZG8iOiJib2IiLCJleHAiOjE1NTMyNjAzMjB9.yUEUF3Suj97U4iyZwIkOvzs8q_E9V8S7afENuMIqQzd2vVdeG8Q2kqA95hhY0SMxNgP6zXYHlx_4wQv8fGyR9A
+Content-Type: application/xml
+
+<Utilisateur>
+  <pseudo>zozo</pseudo>
+</Utilisateur>
+
+<> 2019-04-03T081343.201.json
+
+###
+
+POST http://127.0.0.1:8082
+Accept: application/json;charset=UTF-8
+
+###
+
+PUT http://localhost:8080/utilisateur/4
+Authorization: eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJib2IiLCJwc2V1ZG8iOiJib2IiLCJleHAiOjE1NTMyNjAzMjB9.yUEUF3Suj97U4iyZwIkOvzs8q_E9V8S7afENuMIqQzd2vVdeG8Q2kqA95hhY0SMxNgP6zXYHlx_4wQv8fGyR9A
+Content-Type: application/json
+
+{
+  "id" : "1",
+  "pseudo" : "bob",
+  "nom" : "Martinet",
+  "prenom" : "Bob",
+  "adresse" : "Rue des magnolias",
+  "ville" : "Orleans",
+  "codePostal" : "4500021",
+  "email" : "bob.martinet@gmail.com",
+  "dateInscription" : null,
+  "dateNaiss" : "",
+  "amis" : null
+}
+
+<> 2019-03-25T075709.400.json
+
+###
+
+GET http://127.0.0.1:8080/ui/profil/{pseudo}
+
+###
+
+GET http://localhost:8080/utilisateur/bob
+Authorization: eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJib2IiLCJwc2V1ZG8iOiJib2IiLCJleHAiOjE1NTMyNjAzMjB9.yUEUF3Suj97U4iyZwIkOvzs8q_E9V8S7afENuMIqQzd2vVdeG8Q2kqA95hhY0SMxNgP6zXYHlx_4wQv8fGyR9A
+
+<> 2019-03-23T055611.200.json
+
+###
+
+GET http://localhost:8080/utilisateur/bob
+Authorization: eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJib2IiLCJwc2V1ZG8iOiJib2IiLCJleHAiOjE1NTMyNjAzMjB9.yUEUF3Suj97U4iyZwIkOvzs8q_E9V8S7afENuMIqQzd2vVdeG8Q2kqA95hhY0SMxNgP6zXYHlx_4wQv8fGyR9A
+
+<> 2019-03-23T055304.200.json
+
+###
+
+POST http://localhost:8080/authentification/inscription
+Content-Type: application/json
+
+{
+  "pseudo": "bobby",
+  "password": "Bob45"
+}
+
+###
+
+POST http://localhost:8080/authentification/inscription
+Content-Type: application/json
+
+{
+  "pseudo": "bobby",
+  "password": "Bob45"
+}
+
+###
+
+POST http://localhost:8080/authentification/inscription
+Content-Type: application/json
+
+{
+  "pseudo": "bob",
+  "password": "Bob45"
+}
+
+###
+
+POST http://localhost:8080/authentification/inscription
+Content-Type: application/json
+
+{
+  "pseudo": "bob",
+  "password": "Bob45"
+}
+
+###
+
+POST http://localhost:8080/authentification/inscription
+Content-Type: application/json
+
+{
+  "pseudo": "bob",
+  "password": "Bob45"
+}
+
+###
+
+POST http://localhost:8080/utilisateur/
+Authorization: eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJib2IiLCJwc2V1ZG8iOiJib2IiLCJleHAiOjE1NTMyNjAzMjB9.yUEUF3Suj97U4iyZwIkOvzs8q_E9V8S7afENuMIqQzd2vVdeG8Q2kqA95hhY0SMxNgP6zXYHlx_4wQv8fGyR9A
+Content-Type: application/json
+
+{
+  "pseudo": "zozo"
+}
+
+###
+
+POST http://localhost:8080/authentification/inscription
+Content-Type: application/json
+
+{
+  "pseudo": "bob",
+  "password": "Bob45"
+}
+
+###
+
+POST http://localhost:8080/authentification/inscription
+Content-Type: application/json
+
+{
+  "pseudo": "bob",
+  "password": "Bob45"
+}
+
+###
+
+POST http://localhost:8080/authentification/inscription
+Content-Type: application/json
+
+{
+  "pseudo": "bob",
+  "password": "Bob45"
+}
+
+###
+
+POST http://localhost:8080/authentification/inscription
+Content-Type: application/json
+
+{
+  "pseudo": "bob",
+  "password": "Bob45"
+}
+
+###
+
+POST http://localhost:8080/authentification/inscription
+Content-Type: application/json
+
+{
+  "pseudo": "bob",
+  "password": "Bob45"
+}
+
+###
+
+POST http://localhost:8080/authentification/inscription
+Content-Type: application/json
+
+{
+  "pseudo": "bob",
+  "password": "Bob45"
+}
+
+###
+
+POST http://localhost:8080/authentification/inscription
+Content-Type: application/json
+
+{
+  "pseudo": "bob",
+  "password": "Bob45"
+}
+
+###
+
+POST http://localhost:8080/authentification/inscription
+Content-Type: application/json
+
+{
+  "pseudo": "bob",
+  "password": "Bob45"
+}
+
+###
+
+POST http://localhost:8080/authentification/inscription
+Content-Type: application/json
+
+{
+  "pseudo": "boby",
+  "password": "Alice45"
+}
+
+###
+
+POST http://localhost:8080/authentification/inscription
+Content-Type: application/json
+
+{
+  "pseudo": "boby",
+  "password": "Alice45"
+}
+
+<> 2019-03-22T034800.500.json
+
+###
+
+POST http://localhost:8080/authentification/inscription
+Content-Type: application/json
+
+{
+  "pseudo": "bob",
+  "password": "Bob45"
+}
+
+<> 2019-03-22T034735.409.json
+
+###
+
+POST http://localhost:8080/utilisateur/
+Authorization: eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJib2IiLCJwc2V1ZG8iOiJib2IiLCJleHAiOjE1NTMyNjAzMjB9.yUEUF3Suj97U4iyZwIkOvzs8q_E9V8S7afENuMIqQzd2vVdeG8Q2kqA95hhY0SMxNgP6zXYHlx_4wQv8fGyR9A
+Content-Type: application/json
+
+{
+  "pseudo": "zozo"
+}
+
+<> 2019-03-22T034207.500.json
+
+###
+
+POST http://localhost:8080/utilisateur/
+Authorization: eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJib2IiLCJwc2V1ZG8iOiJib2IiLCJleHAiOjE1NTMyNjAzMjB9.yUEUF3Suj97U4iyZwIkOvzs8q_E9V8S7afENuMIqQzd2vVdeG8Q2kqA95hhY0SMxNgP6zXYHlx_4wQv8fGyR9A
+Content-Type: application/json
+
+{
+  "pseudo": "zozo"
+}
+
+###
+
+POST http://localhost:8080/authentification/inscription
+Content-Type: application/json
+
+{
+  "pseudo": "bob",
+  "password": "Alice45"
+}
+
+###
+
+POST http://localhost:8080/authentification/inscription
+Content-Type: application/json
+
+{
+  "pseudo": "bob",
+  "password": "Alice45"
+}
+
+###
+
+POST http://localhost:8080/authentification/inscription
+Content-Type: application/json
+
+{
+  "pseudo": "bob",
+  "password": "Bob45"
+}
+
+###
+
+POST http://localhost:8080/authentification/inscription
+Content-Type: application/json
+
+{
+  "pseudo": "bob",
+  "password": "Bob45"
+}
+
+###
+
+POST http://localhost:8080/utilisateur/
+Content-Type: application/json
+
+{
+  "pseudo": "zozo",
+  "password": "Zozo123"
+}
+
+###
+
+POST http://localhost:8080/utilisateur/
+Content-Type: application/json
+
+{
+  "pseudo": "zozo",
+  "password": "Zozo123"
+}
+
+###
+
+POST http://localhost:8080/utilisateur/
+Content-Type: application/json
+
+{
+  "pseudo": "zozo",
+  "password": "Zozo123"
+}
+
+###
+
+GET http://localhost:8080/utilisateur/checkToken
+Authorization: eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJib2IiLCJwc2V1ZG8iOiJib2IiLCJleHAiOjE1NTMyNjAzMjB9.yUEUF3Suj97U4iyZwIkOvzs8q_E9V8S7afENuMIqQzd2vVdeG8Q2kqA95hhY0SMxNgP6zXYHlx_4wQv8fGyR9A
+
+<> 2019-03-22T022051.500.json
+
+###
+
+GET http://localhost:8080/utilisateur/checkToken
+Authorization: eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJib2IiLCJwc2V1ZG8iOiJib2IiLCJleHAiOjE1NTMyNjAzMjB9.yUEUF3Suj97U4iyZwIkOvzs8q_E9V8S7afENuMIqQzd2vVdeG8Q2kqA95hhY0SMxNgP6zXYHlx_4wQv8fGyR9A
+
+<> 2019-03-22T021811.500.json
+
+###
+
+GET http://localhost:8080/utilisateur/checkToken
+Authorization: eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJib2IiLCJwc2V1ZG8iOiJib2IiLCJleHAiOjE1NTMyNjAzMjB9.yUEUF3Suj97U4iyZwIkOvzs8q_E9V8S7afENuMIqQzd2vVdeG8Q2kqA95hhY0SMxNgP6zXYHlx_4wQv8fGyR9A
+
+<> 2019-03-22T021149.500.json
+
+###
+
+GET http://localhost:8080/utilisateur/checkToken
+Authorization: eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJib2IiLCJwc2V1ZG8iOiJib2IiLCJleHAiOjE1NTMyNjAzMjB9.yUEUF3Suj97U4iyZwIkOvzs8q_E9V8S7afENuMIqQzd2vVdeG8Q2kqA95hhY0SMxNgP6zXYHlx_4wQv8fGyR9A
+
+###
+
+GET http://localhost:8080/utilisateur/checkToken
+Authorization: eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJib2IiLCJwc2V1ZG8iOiJib2IiLCJleHAiOjE1NTMyNjAzMjB9.yUEUF3Suj97U4iyZwIkOvzs8q_E9V8S7afENuMIqQzd2vVdeG8Q2kqA95hhY0SMxNgP6zXYHlx_4wQv8fGyR9A
+
+###
+
+POST http://localhost:8080/authentification/connexion
+Content-Type: application/json
+
+{
+  "pseudo": "bob",
+  "password": "Bob45"
+}
+
+###
+
+POST http://localhost:8080/authentification/inscription
+Content-Type: application/json
+
+{
+  "pseudo": "bob",
+  "password": "Bob45"
+}
+
+###
+
+GET http://localhost:8080/utilisateur/checkToken
+Authorization: eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhIiwicHNldWRvIjoiYSIsImV4cCI6MTU1MzE4NjI4MX0.aEcEFlppyrry1H5C5lRAq9XpCt140NsHqUXoTTPhGNt69wACauqFnEAp5lrHe0y9cKT68o5qKrJCxB0s4zuJRw
+
+###
+
+GET http://localhost:8080/utilisateur/checkToken
+
+###
+
+GET http://localhost:8080/utilisateur/checkToken
+Authorization: eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhIiwicHNldWRvIjoiYSIsImV4cCI6MTU1MzE4NjI4MX0.aEcEFlppyrry1H5C5lRAq9XpCt140NsHqUXoTTPhGNt69wACauqFnEAp5lrHe0y9cKT68o5qKrJCxB0s4zuJRw
+
+<> 2019-03-22T010220.500.html
+
+###
+

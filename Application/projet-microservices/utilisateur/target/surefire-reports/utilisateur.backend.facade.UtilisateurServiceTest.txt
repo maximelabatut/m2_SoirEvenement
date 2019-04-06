@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: utilisateur.backend.facade.UtilisateurServiceTest
+-------------------------------------------------------------------------------
+Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 26.879 s - in utilisateur.backend.facade.UtilisateurServiceTest

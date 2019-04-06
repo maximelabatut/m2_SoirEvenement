@@ -1,0 +1,11 @@
+soiree/backend/facade/SoireeServiceImpl.class
+soiree/backend/controllers/errors/CustomizedResponseEntityExceptionHandler.class
+soiree/backend/controllers/errors/ErrorDetails.class
+soiree/backend/filters/SecurityInterceptor.class
+soiree/SoireeApplication.class
+soiree/backend/modele/exceptions/SoireeNotFoundException.class
+soiree/backend/facade/SoireeService.class
+soiree/backend/filters/WebConfig.class
+soiree/backend/controllers/SoireeController.class
+soiree/backend/modele/entities/Soiree.class
+soiree/backend/repository/SoireeRepository.class

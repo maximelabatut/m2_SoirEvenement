@@ -1,0 +1,7 @@
+{
+  "timestamp": "2019-04-03T18:27:02.474+0000",
+  "status": 500,
+  "error": "Internal Server Error",
+  "message": "Connect to localhost:8080 [localhost/127.0.0.1] failed: Connection refused (Connection refused)",
+  "path": "/inscription"
+}

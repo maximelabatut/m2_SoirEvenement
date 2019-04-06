@@ -1,0 +1,93 @@
+###
+#####
+####### Micro-service utilisateur
+#####
+###
+
+### Recuperation de tous les utilisateurs
+GET http://localhost:8080/utilisateur/
+Authorization: eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJib2IiLCJwc2V1ZG8iOiJib2IiLCJleHAiOjE1NTMyNjAzMjB9.yUEUF3Suj97U4iyZwIkOvzs8q_E9V8S7afENuMIqQzd2vVdeG8Q2kqA95hhY0SMxNgP6zXYHlx_4wQv8fGyR9A
+
+### Ajout d'un utilisateur en JSON
+POST http://localhost:8080/utilisateur/
+Authorization: eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJib2IiLCJwc2V1ZG8iOiJib2IiLCJleHAiOjE1NTMyNjAzMjB9.yUEUF3Suj97U4iyZwIkOvzs8q_E9V8S7afENuMIqQzd2vVdeG8Q2kqA95hhY0SMxNgP6zXYHlx_4wQv8fGyR9A
+Content-Type: application/json
+
+{
+  "pseudo": "zozo"
+}
+
+
+### Ajout d'un utilisateur en XML
+POST http://localhost:8080/utilisateur/
+Authorization: eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJib2IiLCJwc2V1ZG8iOiJib2IiLCJleHAiOjE1NTMyNjAzMjB9.yUEUF3Suj97U4iyZwIkOvzs8q_E9V8S7afENuMIqQzd2vVdeG8Q2kqA95hhY0SMxNgP6zXYHlx_4wQv8fGyR9A
+Content-Type: application/xml
+
+<Utilisateur>
+  <pseudo>zozo</pseudo>
+</Utilisateur>
+
+
+### Recuperation de l'utilisateur cree
+GET http://localhost:8080/utilisateur/bob
+Authorization: eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJib2IiLCJwc2V1ZG8iOiJib2IiLCJleHAiOjE1NTMyNjAzMjB9.yUEUF3Suj97U4iyZwIkOvzs8q_E9V8S7afENuMIqQzd2vVdeG8Q2kqA95hhY0SMxNgP6zXYHlx_4wQv8fGyR9A
+
+
+### Modification de l'utilisateur en JSON
+PUT http://localhost:8080/utilisateur/4
+Authorization: eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJib2IiLCJwc2V1ZG8iOiJib2IiLCJleHAiOjE1NTMyNjAzMjB9.yUEUF3Suj97U4iyZwIkOvzs8q_E9V8S7afENuMIqQzd2vVdeG8Q2kqA95hhY0SMxNgP6zXYHlx_4wQv8fGyR9A
+Content-Type: application/json
+
+{
+  "id" : "1",
+  "pseudo" : "bob",
+  "nom" : "Martinet",
+  "prenom" : "Bob",
+  "adresse" : "Rue des magnolias",
+  "ville" : "Orleans",
+  "codePostal" : "45000",
+  "email" : "bob.martinet@gmail.com",
+  "dateInscription" : null,
+  "dateNaiss" : "",
+  "amis" : null
+}
+
+
+### Modification de l'utilisateur en XML
+PUT http://localhost:8080/utilisateur/4
+Authorization: eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJib2IiLCJwc2V1ZG8iOiJib2IiLCJleHAiOjE1NTMyNjAzMjB9.yUEUF3Suj97U4iyZwIkOvzs8q_E9V8S7afENuMIqQzd2vVdeG8Q2kqA95hhY0SMxNgP6zXYHlx_4wQv8fGyR9A
+Content-Type: application/xml
+
+<Utilisateur>
+    <nom>Robert</nom>
+    <prenom>Martin</prenom>
+    <adresse>123 rue ABC</adresse>
+    <codePostal>45000</codePostal>
+    <email>robert.martin@gmail.com</email>
+    <dateNaiss>1980-01-01</dateNaiss>
+</Utilisateur>
+
+### Ajout d'un utilisateur ami
+POST http://localhost:8080/utilisateur/zozo
+Authorization: eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJib2IiLCJwc2V1ZG8iOiJib2IiLCJleHAiOjE1NTMyNjAzMjB9.yUEUF3Suj97U4iyZwIkOvzs8q_E9V8S7afENuMIqQzd2vVdeG8Q2kqA95hhY0SMxNgP6zXYHlx_4wQv8fGyR9A
+Content-Type: application/xml
+
+<Utilisateur>
+    <pseudo>zozo</pseudo>
+</Utilisateur>
+
+### Suppression d'un utilisateur ami
+POST http://localhost:8080/utilisateur/zozo
+Authorization: eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJib2IiLCJwc2V1ZG8iOiJib2IiLCJleHAiOjE1NTMyNjAzMjB9.yUEUF3Suj97U4iyZwIkOvzs8q_E9V8S7afENuMIqQzd2vVdeG8Q2kqA95hhY0SMxNgP6zXYHlx_4wQv8fGyR9A
+Content-Type: application/xml
+
+<Utilisateur>
+    <pseudo>zozo</pseudo>
+</Utilisateur>
+
+
+### Modification de l'utilisateur en XML
+PUT http://localhost:8080/utilisateur/1/amis/2
+Authorization: eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJib2IiLCJwc2V1ZG8iOiJib2IiLCJleHAiOjE1NTMyNjAzMjB9.yUEUF3Suj97U4iyZwIkOvzs8q_E9V8S7afENuMIqQzd2vVdeG8Q2kqA95hhY0SMxNgP6zXYHlx_4wQv8fGyR9A
+
+###

@@ -1,0 +1,103 @@
+### Retourne tous les évenements
+GET https://data.orleans-metropole.fr/api/records/1.0/search/?dataset=evenements-publics-openagenda&facet=tags&facet=placename&facet=department&facet=region&facet=city&facet=date_start&facet=date_end&facet=pricing_info&facet=updated_at&facet=city_district
+
+
+###
+GET https://data.orleans-metropole.fr/api/records/1.0/search/
+Content-Type: application/json
+
+{
+  "dataset": "evenements-publics-openagenda",
+  "facet": "tags",
+  "facet": "placename",
+  "facet": "department",
+  "facet": "region",
+  "facet": "city",
+  "facet": "date_start",
+  "facet": "date_end",
+  "facet": "pricing_info",
+  "facet": "updated_at",
+  "facet": "city_district"
+}
+
+
+### retourne un événement en fonction de son uid
+### uid a changé suivant l'évenement
+
+GET https://data.orleans-metropole.fr/api/records/1.0/search/?dataset=evenements-publics-openagenda&refine.uid=74232419
+
+
+###
+GET https://data.orleans-metropole.fr/api/records/1.0/search/
+Content-Type: application/json
+
+{
+  "dataset": "evenements-publics-openagenda",
+  "refine.uid": "74232419"
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+### Authentification à l'API OpenDataSoft
+### A ne pas changer !
+
+### GET https:// nom de l'api .my.opendatasoft.com/api/v2/catalog/datasets/
+### HTTP/1.1 ???
+GET https://projet-api.my.opendatasoft.com/api/v2/catalog/datasets/
+Content-Type: application/json
+
+{
+  "apikey": "ed4047d7a98c763fb811f992c2a139cd67d0b34c7e7bff59c202e70b"
+}
+
+### OAuth 2
+### HTTP/1.1 ???
+GET https://projet-api.my.opendatasoft.com/oauth2/authorize/
+Content-Type: application/json
+
+{
+    "client_id": "cd0191e7813c45178a2922b9776abb52",
+    "redirect_uri": "http://my-api-groupec/OAuth2/redirect",
+    "response_type": "code",
+    "state": "randomstring",
+    "scope": "all"
+}
+
+
+### OAuth 2
+### HTTP/1.1 ???
+POST https://projet-api.my.opendatasoft.com/oauth2/token/
+Content-Type: application/json
+
+{
+  "client_id": "cd0191e7813c45178a2922b9776abb52",
+  "client_secret": "823e387be7f64c7aa55d5164457d671b",
+  "grant_type": "authorization_code",
+  "code": "GokshWxRFXmW0MaLHkDv5HrG6wieGs",
+  "redirect_uri": "http://my-api-groupec/OAuth2/redirect",
+}
+
+
+##publisher	 The dataset publisher
+##title	The dataset title
+##description	 The dataset description
+##license	 The dataset license
+##records_count	The number of records in the dataset
+##modified	 The last modification date of the dataset
+##language	 The language of the dataset (iso code)
+##theme	The theme of the dataset
+##references	The references for the dataset
+
+### Evenement
+### retourne la liste de tous les évenement sur l'open data
+GET https://public.opendatasoft.com/api/datasets/1.0/search

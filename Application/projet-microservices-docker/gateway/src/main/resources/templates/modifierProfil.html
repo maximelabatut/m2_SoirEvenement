@@ -1,0 +1,175 @@
+<!DOCTYPE HTML>
+<html lang="fr" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="includes/head::head"></head>
+<header th:replace="includes/headerLogged::headerLogged"></header>
+    <body class="w3-teal">
+
+        <div class="container adjust-top">
+            <div class="path-nav">
+                <a th:href="@{/ui/menuPrincipal}">Accueil</a>
+                >
+                <a th:href="@{/ui/profil/{id}(id=${session.idCourant})}">Profil</a>
+                >
+                <a href="#">Modification</a>
+            </div>
+            <div class="row">
+                <div class="top-page">
+                    <h4 class="page-title" th:text="'Modification du profil de ' + ${session.pseudoCourant}"></h4>
+                    <!--<a th:href="'../modifierProfil/'+${session.idCourant}" class="waves-effect waves-light btn green-theme page-title-button">Modifier</a>-->
+                    <a th:href="'../profil/'+${session.idCourant}" class="btn waves-effect waves-light btn green-theme page-title-button btn-modal-choix" name="action">Annuler</a>
+                </div>
+
+                <div class="col s12 m12 l8">
+                    <div class="card-panel">
+                        <h5 class="panel-information">Vos informations</h5>
+                        <span class="inscription-date">Inscription le : <label th:text="${utilisateur.dateInscription}"/></span>
+                        <div class="row form-log">
+                            <form th:action="@{/ui/modifierProfil}" method="post" th:object="${utilisateur}" class="col s12">
+                                <div class="row form-theme">
+                                    <div class="input-field col s12">
+                                        <input type="text" th:value="${utilisateur.email}" name="email" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required/>
+                                        <label for="email">Email</label>
+                                    </div>
+                                    <div class="input-field col s6">
+                                        <input type="text" th:value="${utilisateur.nom}" name="nom" id="nom" min="1" max="50" required/>
+                                        <label for="nom">Nom</label>
+                                    </div>
+                                    <div class="input-field col s6">
+                                        <input type="text" th:value="${utilisateur.prenom}" name="prenom" id="prenom" min="1" max="50" />
+                                        <label for="prenom">Prénom</label>
+                                    </div>
+                                    <div class="input-field col s12">
+                                        <input type="text" th:value="${utilisateur.adresse}" name="adresse" id="adresse" min="1" max="200"required/>
+                                        <label for="adresse">Adresse</label>
+                                    </div>
+                                    <div class="input-field col s6">
+                                        <input type="text" th:value="${utilisateur.ville}" name="ville" id="ville" min="1" max="50" required/>
+                                        <label for="ville">Ville</label>
+                                    </div>
+                                    <div class="input-field col s6">
+                                        <input type="text" th:value="${utilisateur.codePostal}" name="codePostal" id="codePostal" min="5" max="5" required/>
+                                        <label for="codePostal">Code Postal</label>
+                                    </div>
+                                    <div class="input-field col s12">
+                                        <input type="text" th:value="${utilisateur.dateNaiss}" class="datepicker" name="dateNaiss" id="dateNaiss" required/>
+                                        <label for="dateNaiss">Date de Naissance</label>
+                                    </div>
+
+                                    <input type="hidden" th:value="${utilisateur.id}" name="id" id="id"/>
+                                    <input type="hidden" th:value="${utilisateur.pseudo}" name="pseudo" id="pseudo"/>
+                                    <input type="hidden" th:value="${utilisateur.dateInscription}" name="dateInscription" id="dateInscription"/>
+
+                                    <div class="input-field col s12">
+                                        <input class="btn green-theme waves-effect waves-light right" type="submit" value="Enregistrer">
+                                    </div>
+                                </div>
+                            </form>
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col s12 m12 l4">
+                    <div class="card-panel">
+                        <h5 class="panel-information">Vos Amis</h5>
+                        <div class="overflow">
+                            <table>
+                                <thead>
+                                <tr>
+                                    <th>Nom</th>
+                                    <th>Action</th>
+                                </tr>
+                                </thead>
+
+                                <tbody>
+                                <tr th:if="${#lists.isEmpty(amis)}"><td>Vous n'avez pas encore d'amis</td></tr>
+                                <tr th:each="ami:${amis}" class="small-height-cell">
+                                    <td><a th:href="@{/ui/profil/{id}(id=${ami.id})}" th:text="${ami.prenom} + ' ' + ${ami.nom}"/></td>
+                                    <td><a th:href="@{/ui/supprimerAmi/{id}(id=${ami.id})}" class="waves-effect waves-light red-theme btn-small" title="Supprimer cet ami"><i class="material-icons">cancel</i></a></td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </body>
+    <script type="application/javascript">
+        $(document).ready(function() {
+            inter_fr = {
+                cancel: 'Annuler',
+                clear: 'RàZ',
+                done:    'Valider',
+                previousMonth:    '‹',
+                nextMonth:    '›',
+                months:    [
+                    'Janvier',
+                    'Février',
+                    'Mars',
+                    'Avril',
+                    'Mai',
+                    'Juin',
+                    'Juillet',
+                    'Août',
+                    'Septembre',
+                    'Octobre',
+                    'Novembre',
+                    'Décembre'
+                ],
+                monthsShort:    [
+                    'Jan',
+                    'Fév',
+                    'Mar',
+                    'Avr',
+                    'Mai',
+                    'Jun',
+                    'Jul',
+                    'Aou',
+                    'Sep',
+                    'Oct',
+                    'Nov',
+                    'Dec'
+                ],
+
+                weekdays:    [
+                    'Dimanche',
+                    'Lundi',
+                    'Mardi',
+                    'Mercredi',
+                    'Jeudi',
+                    'Vendredi',
+                    'Samedi'
+                ],
+
+                weekdaysShort:    [
+                    'Dimanche',
+                    'Lundi',
+                    'Mardi',
+                    'Mercredi',
+                    'Jeudi',
+                    'Vendredi',
+                    'Samedi'
+                ],
+
+                weekdaysAbbrev:    ['D', 'L', 'M', 'M', 'J', 'V', 'S']
+            };
+
+            $('.datepicker').datepicker({
+                format: 'yyyy-mm-dd',
+                selectYears: 120,
+                i18n: inter_fr
+            });
+        });
+        /*
+        document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('.datepicker');
+            var options = {
+                format: 'dd/mm/yyyy'
+            };
+            var instances = M.Datepicker.init(elems, options);
+        });*/
+    </script>
+</html>

@@ -1,0 +1,6 @@
+{
+  "timestamp": "2019-03-22T14:42:07.397+0000",
+  "status": 500,
+  "error": "Internal Server Error",
+  "message": "Read timed out"
+}

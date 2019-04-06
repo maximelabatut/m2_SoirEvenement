@@ -1,0 +1,125 @@
+<!DOCTYPE HTML>
+<html lang="fr" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="includes/head::head"></head>
+<header th:replace="includes/headerLogged::headerLogged"></header>
+    <body>
+
+        <div class="container adjust-top">
+            <div class="path-nav">
+                <a th:href="@{/ui/menuPrincipal}">Accueil</a>
+                >
+                <a th:href="@{/ui/voirSoirees}">Soirées</a>
+                >
+                <a href="#">Détails de la soirée</a>
+            </div>
+            <div class="row">
+                <div class="top-page">
+                    <h4 class="page-title">Détails de la soirée</h4>
+                    <a th:if="${session.idCourant.equals(soiree.utilisateur)}" th:href="@{/ui/modifierSoiree/{id}(id=${soiree.id})}" class="btn waves-effect waves-light btn green-theme page-title-button btn-modal-choix" name="action" value="modification">Modifier Soirée</a>
+                </div>
+
+                <div class="col s12 m12 l12">
+                    <div class="card-panel">
+                        <input type="hidden" th:value="${soiree.id}" name="id" id="id"/>
+
+                        <div class="col s6">
+                            <h5 class="panel-information">Nom de la soirée : <span th:text="${soiree.nom}"/></h5>
+                        </div>
+                        <div class="input-field col s6">
+                            <input type="text" th:value="${soiree.heureDebut}" disabled name="heureDebut" id="heureDebut" maxlength="200"/>
+                            <label for="heureDebut">Heure début de soirée</label>
+                        </div>
+                        <div class="input-field col s6">
+                            <input type="text" th:value="${soiree.nbPlaces}" disabled name="nbPlaces" id="nbPlaces" maxlength="200"/>
+                            <label for="nbPlaces">Nombre de places disponibles</label>
+                        </div>
+                        <div class="input-field col s6">
+                            <input type="text" th:value="${soiree.dateSoiree}" disabled name="dateSoiree" id="dateSoiree" maxlength="200"/>
+                            <label for="dateSoiree">Date de la soirée</label>
+                        </div>
+
+
+                        <div class="row">
+                            <div class="col s12">
+                                <h6>Voici les évenements privés liés :</h6>
+
+                                <div class="overflow">
+                                    <table>
+                                        <thead>
+                                        <tr>
+                                            <th>Nom</th>
+                                            <th>Lieu</th>
+                                            <th>Date</th>
+                                        </tr>
+                                        </thead>
+
+                                        <tbody>
+                                        <tr th:if="${#lists.isEmpty(evenements)}"><td>Il n'y a aucun évènements privés liés</td></tr>
+                                        <tr th:name="evenements" th:each="evenement:${evenements}" class="small-height-cell">
+                                            <td th:text="${evenement.nom}"></td>
+                                            <td th:text="${evenement.lieu}"></td>
+                                            <td th:text="${evenement.dateEvenement}"></td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                            </div>
+                            <div class="col s12">
+                                <h6 class="table-title">Voici les évenements publics liés :</h6>
+
+                                <div class="overflow">
+                                    <table>
+                                        <thead>
+                                        <tr>
+                                            <th>Nom</th>
+                                            <th>Lieu</th>
+                                            <th>Date</th>
+                                        </tr>
+                                        </thead>
+
+                                        <tbody>
+                                        <tr th:if="${#lists.isEmpty(evenementsOpenAgenda)}"><td>Il n'y a aucun évènements publics liés</td></tr>
+                                        <tr th:name="evenementsOpenAgenda" th:each="evenementOpenAgenda:${evenementsOpenAgenda}" class="small-height-cell">
+                                            <td th:text="${evenementOpenAgenda.title}"/>
+                                            <td th:text="${evenementOpenAgenda.placename}"/>
+                                            <td th:text="${evenementOpenAgenda.date_start}"/>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+
+
+                            <div class="col s12 m12 l12">
+                                <h6 class="table-title">Voici les participants :</h6>
+                                <table>
+                                    <thead>
+                                    <tr>
+                                        <th>Nom</th>
+                                        <th>Prénom</th>
+                                        <th>Voir profil</th>
+                                    </tr>
+                                    </thead>
+
+                                    <tbody>
+                                    <tr th:if="${#lists.isEmpty(lesParticipants)}"><td>Il n'y a aucun participants pour le moment</td></tr>
+                                    <tr th:name="lesParticipants" th:each="leParticipant:${lesParticipants}" class="small-height-cell">
+                                        <td th:text="${leParticipant.getNom()}"/>
+                                        <td th:text="${leParticipant.getPrenom()}"/>
+                                        <td><a th:href="@{/ui/profil/{id}(id=${leParticipant.getId()})}"><i class="small material-icons">open_in_new</i></a></td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+    </body>
+</html>

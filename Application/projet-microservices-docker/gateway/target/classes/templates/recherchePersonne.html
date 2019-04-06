@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html lang="fr"  xmlns:th="http://www.thymeleaf.org">
+<head th:replace="includes/head::head"></head>
+<header th:replace="includes/headerLogged::headerLogged"></header>
+    <body>
+
+    <div class="container adjust-top">
+        <div class="path-nav">
+            <a th:href="@{/ui/menuPrincipal}">Accueil</a>
+            >
+            <a href="#">Personnes</a>
+        </div>
+        <div class="row">
+            <div class="top-page">
+                <h4 class="page-title">Liste des personnes</h4>
+            </div>
+
+            <div class="col l12">
+                <div class="card-panel">
+                    <h5 class="panel-information">Personnes</h5>
+                    <table>
+                        <thead>
+                        <tr>
+                            <th>Nom</th>
+                            <th>Actions</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr th:if="${#lists.isEmpty(utilisateurs)}"><td>Il semble que vous soyez le seul ici...</td></tr>
+                        <tr th:each="utilisateur:${utilisateurs}" class="small-height-cell">
+                            <td><a th:href="@{/ui/profil/{id}(id=${utilisateur.id})}" th:text="${utilisateur.prenom} + ' ' + ${utilisateur.nom}"/></td>
+                            <td><a th:if="${!session.idCourant.equals(utilisateur.id) && !amis.contains(utilisateur.id)}" th:href="@{/ui/utilisateur/{id}/invitationsAmis(id=${utilisateur.id})}" ><i class="tiny material-icons">person_add</i></a></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    </body>
+</html>

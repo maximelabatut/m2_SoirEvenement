@@ -1,0 +1,69 @@
+<!DOCTYPE HTML>
+<html lang="fr" xmlns:th="http://www.thymeleaf.org">
+    <head th:replace="includes/head::head"></head>
+    <header th:replace="includes/headerLogged::headerLogged"></header>
+    <body>
+        <div class="container adjust-top">
+            <div class="path-nav">
+                <a th:href="@{/ui/menuPrincipal}">Accueil</a>
+                >
+                <a th:href="@{/ui/voirEvenements}">&Eacute;vènements</a>
+                >
+                <a href="#">Détails de l'évènement public</a>
+            </div>
+            <div class="row">
+                <div class="top-page">
+                    <h4 class="page-title">Détails de l'évènement public</h4>
+                </div>
+
+                <div class="col s12 m12 l12">
+                    <div class="card-panel">
+                        <h5 class="panel-information">Informations</h5>
+                        <div class="row form-log">
+                            <form class="col s12">
+                                <div class="row form-theme">
+                                    <div class="input-field col s12">
+                                        <input type="text" th:value="${evenementsOpenAgenda.title}" disabled name="nom" id="nom"/>
+                                        <label for="nom">Nom de l'évènement</label>
+                                    </div>
+                                    <div class="input-field col s6">
+                                        <input type="text" th:value="${evenementsOpenAgenda.date_start}" disabled name="date_start" id="date_start"/>
+                                        <label for="date_start">Date de début</label>
+                                    </div>
+                                    <div class="input-field col s6">
+                                        <input type="text" th:value="${evenementsOpenAgenda.date_end}" disabled name="date_end" id="date_end"/>
+                                        <label for="date_end">Date de fin</label>
+                                    </div>
+                                    <div class="input-field col s12">
+                                        <input type="text" th:value="${evenementsOpenAgenda.pricing_info}" disabled name="prix" id="prix"/>
+                                        <label for="prix">Prix</label>
+                                    </div>
+                                    <div class="input-field col s12 m6">
+                                        <input type="text" th:value="${evenementsOpenAgenda.city}" disabled name="ville" id="ville"/>
+                                        <label for="ville">Ville</label>
+                                    </div>
+                                    <div class="input-field col s12 m6">
+                                        <input type="text" th:value="${evenementsOpenAgenda.address}" disabled name="adresse" id="adresse"/>
+                                        <label for="adresse">Adresse</label>
+                                    </div>
+                                    <div class="input-field col s12">
+                                        <input type="text" th:value="${evenementsOpenAgenda.placename}" disabled name="lieu" id="lieu"/>
+                                        <label for="lieu">Lieu de l'évènement</label>
+                                    </div>
+                                    <div class="input-field col s12">
+                                        <input type="text" th:value="${evenementsOpenAgenda.description}" disabled name="description" id="description"/>
+                                        <label for="description">Description</label>
+                                    </div>
+
+                                </div>
+                            </form>
+
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE HTML>
+<html lang="fr" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="includes/head::head"></head>
+<header th:replace="includes/headerLogged::headerLogged"></header>
+    <body>
+        <div class="container adjust-top">
+            <div class="path-nav">
+                <a th:href="@{/ui/menuPrincipal}">Accueil</a>
+                >
+                <a href="#">Profil</a>
+            </div>
+            <div class="row">
+                <div class="top-page">
+                    <h4 class="page-title" th:text="'Profil de ' + ${utilisateur.pseudo}"></h4>
+
+                    <a th:if="${session.idCourant.equals(utilisateur.id)}" th:href="@{/ui/modifierProfil/{id}(id=${session.idCourant})}" class="waves-effect waves-light btn green-theme page-title-button">Modifier</a>
+                </div>
+
+                <div class="col s12 m12 l8">
+                    <div class="card-panel">
+                        <h5 class="panel-information" th:if="${session.idCourant.equals(utilisateur.id)}">Vos informations</h5>
+                        <h5 class="panel-information" th:unless="${session.idCourant.equals(utilisateur.id)}">Ses informations</h5>
+                        <span class="inscription-date">Inscription le : <label th:text="${utilisateur.dateInscription}"/></span>
+                        <div class="row form-log">
+                            <form class="col s12">
+                                <div class="row form-theme">
+                                    <div class="input-field col s12">
+                                        <input type="text" th:value="${utilisateur.email}" disabled name="email" id="email"/>
+                                        <label for="email">Email :</label>
+                                    </div>
+                                    <div class="input-field col s6">
+                                        <input type="text" th:value="${utilisateur.nom}" disabled name="nom" id="nom" maxlength="50"/>
+                                        <label for="nom">Nom :</label>
+                                    </div>
+                                    <div class="input-field col s6">
+                                        <input type="text" th:value="${utilisateur.prenom}" disabled name="prenom" id="prenom" maxlength="50"/>
+                                        <label for="prenom">Prénom :</label>
+                                    </div>
+                                    <div class="input-field col s12">
+                                        <input type="text" th:value="${utilisateur.adresse}" disabled name="adresse" id="adresse" maxlength="200"/>
+                                        <label for="adresse">Adresse :</label>
+                                    </div>
+                                    <div class="input-field col s6">
+                                        <input type="text" th:value="${utilisateur.ville}" disabled name="ville" id="ville" maxlength="50"/>
+                                        <label for="ville">Ville : </label>
+                                    </div>
+                                    <div class="input-field col s6">
+                                        <input type="text" th:value="${utilisateur.codePostal}" disabled name="codePostal" id="codePostal"/>
+                                        <label for="codePostal">Code Postal : </label>
+                                    </div>
+                                    <div class="input-field col s12">
+                                        <input type="text" th:value="${utilisateur.dateNaiss}" disabled name="dateNaiss" id="dateNaiss"/>
+                                        <label for="dateNaiss">Date de Naissance : </label>
+                                    </div>
+
+                                </div>
+                            </form>
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col s12 m12 l4">
+                    <div class="card-panel">
+                        <h5 class="panel-information" th:if="${session.idCourant.equals(utilisateur.id)}">Vos Amis</h5>
+                        <h5 class="panel-information" th:unless="${session.idCourant.equals(utilisateur.id)}">Ses Amis</h5>
+                        <div class="overflow">
+                            <table>
+                                <thead>
+                                <tr>
+                                    <th>Nom</th>
+                                </tr>
+                                </thead>
+
+                                <tbody>
+                                <tr th:if="${#lists.isEmpty(amis)}"><td>Vous n'avez pas encore d'amis</td></tr>
+                                <tr th:each="ami:${amis}" class="small-height-cell">
+                                    <td><a th:href="@{/ui/profil/{id}(id=${ami.id})}" th:text="${ami.prenom} + ' ' + ${ami.nom}"/></td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </body>
+</html>

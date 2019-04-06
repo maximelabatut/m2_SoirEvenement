@@ -1,0 +1,56 @@
+###
+#####
+####### Micro-service authentification
+#####
+###
+
+### Inscription OK -> 201
+POST http://localhost:8080/authentification/inscription
+Content-Type: application/json
+
+{
+  "pseudo": "boby",
+  "password": "Bob45"
+}
+
+### Inscription KO -> 409 -> Pseudo deja pris
+
+POST http://localhost:8080/authentification/inscription
+Content-Type: application/json
+
+{
+  "pseudo": "bob",
+  "password": "Alice45"
+}
+
+### Connexion OK -> 200 -> Token dans le header
+
+POST http://localhost:8080/authentification/connexion
+Content-Type: application/json
+
+{
+  "pseudo": "bob",
+  "password": "Bob45"
+}
+
+### Connexion KO -> 409 -> Identifiants incorrects
+
+POST http://localhost:8080/authentification/connexion
+Content-Type: application/json
+
+{
+  "pseudo": "bob",
+  "password": "Alice45"
+}
+
+### Connexion KO -> 404 -> Utilisateur introuvable
+
+POST http://localhost:8080/authentification/connexion
+Content-Type: application/json
+
+{
+  "pseudo": "Thierry",
+  "password": "blabla"
+}
+
+###

@@ -1,0 +1,10 @@
+authentification/AuthentificationApplication.class
+authentification/backend/modele/exception/UserIntrouvableException.class
+authentification/backend/controllers/AuthentificationController.class
+authentification/backend/facade/AuthentificationService.class
+authentification/backend/modele/exception/PseudoDejaPrisException.class
+authentification/backend/modele/exception/IdentifiantsIncorrectsException.class
+authentification/backend/modele/entities/User.class
+authentification/backend/domain/Login.class
+authentification/backend/repository/UserRepository.class
+authentification/backend/facade/AuthentificationServiceImpl.class
